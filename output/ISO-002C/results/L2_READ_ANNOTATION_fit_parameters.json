@@ -1,0 +1,117 @@
+[
+  {
+    "model": "L2_READ_ANNOTATION",
+    "outer_fold": 0,
+    "status": "ACCEPTED",
+    "params": {
+      "C": 0.01
+    },
+    "warning_messages": [],
+    "train_n": 24024,
+    "validation_n": 5821,
+    "selected_inner_enrichment": 1.6623240310284955,
+    "transformed_columns": [
+      "LR_read_R1",
+      "LR_read_R2",
+      "annotation"
+    ],
+    "features": [
+      "LR_read_R1",
+      "LR_read_R2",
+      "annotation"
+    ],
+    "wall_seconds": 0.03970904415473342
+  },
+  {
+    "model": "L2_READ_ANNOTATION",
+    "outer_fold": 1,
+    "status": "ACCEPTED",
+    "params": {
+      "C": 0.01
+    },
+    "warning_messages": [],
+    "train_n": 23321,
+    "validation_n": 6248,
+    "selected_inner_enrichment": 1.6706746401286545,
+    "transformed_columns": [
+      "LR_read_R1",
+      "LR_read_R2",
+      "annotation"
+    ],
+    "features": [
+      "LR_read_R1",
+      "LR_read_R2",
+      "annotation"
+    ],
+    "wall_seconds": 0.038718641735613346
+  },
+  {
+    "model": "L2_READ_ANNOTATION",
+    "outer_fold": 2,
+    "status": "ACCEPTED",
+    "params": {
+      "C": 0.1
+    },
+    "warning_messages": [],
+    "train_n": 23153,
+    "validation_n": 6352,
+    "selected_inner_enrichment": 1.6736635948460568,
+    "transformed_columns": [
+      "LR_read_R1",
+      "LR_read_R2",
+      "annotation"
+    ],
+    "features": [
+      "LR_read_R1",
+      "LR_read_R2",
+      "annotation"
+    ],
+    "wall_seconds": 0.03791595483198762
+  },
+  {
+    "model": "L2_READ_ANNOTATION",
+    "outer_fold": 3,
+    "status": "ACCEPTED",
+    "params": {
+      "C": 1.0
+    },
+    "warning_messages": [],
+    "train_n": 23329,
+    "validation_n": 6264,
+    "selected_inner_enrichment": 1.650726938416819,
+    "transformed_columns": [
+      "LR_read_R1",
+      "LR_read_R2",
+      "annotation"
+    ],
+    "features": [
+      "LR_read_R1",
+      "LR_read_R2",
+      "annotation"
+    ],
+    "wall_seconds": 0.03880018228664994
+  },
+  {
+    "model": "L2_READ_ANNOTATION",
+    "outer_fold": 4,
+    "status": "ACCEPTED",
+    "params": {
+      "C": 0.01
+    },
+    "warning_messages": [],
+    "train_n": 23808,
+    "validation_n": 5802,
+    "selected_inner_enrichment": 1.6513218866013233,
+    "transformed_columns": [
+      "LR_read_R1",
+      "LR_read_R2",
+      "annotation"
+    ],
+    "features": [
+      "LR_read_R1",
+      "LR_read_R2",
+      "annotation"
+    ],
+    "wall_seconds": 0.03843044117093086
+  }
+]

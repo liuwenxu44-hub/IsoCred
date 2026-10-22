@@ -1,0 +1,32 @@
+Upstream data and software
+
+This repository contains study code and processed analysis files. It does
+not bundle raw sequencing reads, original CTSS resources, reference genomes
+or third-party software source distributions.
+
+ENCODE: source files are identified in DATA.md. ENCODE permits unrestricted
+use of released data; please credit the producing labs and the project.
+https://www.encodeproject.org/about/data-use-policy/
+
+FANTOM5: FANTOM5 © RIKEN licensed under CC Attribution 4.0 International.
+The study derives promoter-group support labels from FANTOM5 CTSS data;
+those labels are not the original CTSS files.
+https://fantom.gsc.riken.go.jp/
+https://dbarchive.biosciencedbc.jp/en/fantom5/lic.html
+
+LRGASP and GEO: obtain the candidate submissions and GSE185917 source files
+from their providers. Their identifiers and processing roles are listed in
+DATA.md. Cite the original resource when reusing these inputs:
+Pardo-Palacios et al. Nature Methods (2024).
+https://doi.org/10.1038/s41592-024-02298-3
+https://lrgasp.github.io/lrgasp-submissions/
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE185917
+
+Software dependencies keep their own licenses. Installing a package listed
+in requirements.txt does not transfer that package's copyright or license
+to this project. In particular, the included study adapters are not copies
+of the full PSQAN or SQANTI3 software distributions.
+
+The repository licenses cover only the rights held by the study authors.
+They do not supersede upstream terms or claim ownership of public source
+data. Check the original providers for the terms applicable to their files.

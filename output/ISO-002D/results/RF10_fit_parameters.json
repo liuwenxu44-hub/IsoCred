@@ -1,0 +1,222 @@
+[
+  {
+    "model": "RF10",
+    "outer_fold": 0,
+    "status": "ACCEPTED",
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 12,
+      "min_samples_leaf": 50,
+      "max_features": "sqrt"
+    },
+    "warning_messages": [],
+    "train_n": 24024,
+    "validation_n": 5821,
+    "selected_inner_enrichment": 1.805242232541341,
+    "transformed_columns": [
+      "LR_junction_R1",
+      "LR_junction_fraction_R1",
+      "LR_junction_R2",
+      "LR_junction_fraction_R2",
+      "annotation",
+      "resolution_candidate_count",
+      "resolution_TSS_count",
+      "resolution_window",
+      "resolution_monoexon",
+      "status_junction_NOT_APPLICABLE",
+      "missingindicator_LR_junction_R1",
+      "missingindicator_LR_junction_fraction_R1",
+      "missingindicator_LR_junction_R2",
+      "missingindicator_LR_junction_fraction_R2"
+    ],
+    "features": [
+      "LR_junction_R1",
+      "LR_junction_fraction_R1",
+      "LR_junction_R2",
+      "LR_junction_fraction_R2",
+      "annotation",
+      "resolution_candidate_count",
+      "resolution_TSS_count",
+      "resolution_window",
+      "resolution_monoexon",
+      "status_junction_NOT_APPLICABLE"
+    ],
+    "wall_seconds": 1.8256694311276078
+  },
+  {
+    "model": "RF10",
+    "outer_fold": 1,
+    "status": "ACCEPTED",
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 12,
+      "min_samples_leaf": 10,
+      "max_features": "sqrt"
+    },
+    "warning_messages": [],
+    "train_n": 23321,
+    "validation_n": 6248,
+    "selected_inner_enrichment": 1.797112836169198,
+    "transformed_columns": [
+      "LR_junction_R1",
+      "LR_junction_fraction_R1",
+      "LR_junction_R2",
+      "LR_junction_fraction_R2",
+      "annotation",
+      "resolution_candidate_count",
+      "resolution_TSS_count",
+      "resolution_window",
+      "resolution_monoexon",
+      "status_junction_NOT_APPLICABLE",
+      "missingindicator_LR_junction_R1",
+      "missingindicator_LR_junction_fraction_R1",
+      "missingindicator_LR_junction_R2",
+      "missingindicator_LR_junction_fraction_R2"
+    ],
+    "features": [
+      "LR_junction_R1",
+      "LR_junction_fraction_R1",
+      "LR_junction_R2",
+      "LR_junction_fraction_R2",
+      "annotation",
+      "resolution_candidate_count",
+      "resolution_TSS_count",
+      "resolution_window",
+      "resolution_monoexon",
+      "status_junction_NOT_APPLICABLE"
+    ],
+    "wall_seconds": 2.1395594333298504
+  },
+  {
+    "model": "RF10",
+    "outer_fold": 2,
+    "status": "ACCEPTED",
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 12,
+      "min_samples_leaf": 50,
+      "max_features": "sqrt"
+    },
+    "warning_messages": [],
+    "train_n": 23153,
+    "validation_n": 6352,
+    "selected_inner_enrichment": 1.8168530342516762,
+    "transformed_columns": [
+      "LR_junction_R1",
+      "LR_junction_fraction_R1",
+      "LR_junction_R2",
+      "LR_junction_fraction_R2",
+      "annotation",
+      "resolution_candidate_count",
+      "resolution_TSS_count",
+      "resolution_window",
+      "resolution_monoexon",
+      "status_junction_NOT_APPLICABLE",
+      "missingindicator_LR_junction_R1",
+      "missingindicator_LR_junction_fraction_R1",
+      "missingindicator_LR_junction_R2",
+      "missingindicator_LR_junction_fraction_R2"
+    ],
+    "features": [
+      "LR_junction_R1",
+      "LR_junction_fraction_R1",
+      "LR_junction_R2",
+      "LR_junction_fraction_R2",
+      "annotation",
+      "resolution_candidate_count",
+      "resolution_TSS_count",
+      "resolution_window",
+      "resolution_monoexon",
+      "status_junction_NOT_APPLICABLE"
+    ],
+    "wall_seconds": 1.7625156380236149
+  },
+  {
+    "model": "RF10",
+    "outer_fold": 3,
+    "status": "ACCEPTED",
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 6,
+      "min_samples_leaf": 200,
+      "max_features": 0.5
+    },
+    "warning_messages": [],
+    "train_n": 23329,
+    "validation_n": 6264,
+    "selected_inner_enrichment": 1.7998256578660787,
+    "transformed_columns": [
+      "LR_junction_R1",
+      "LR_junction_fraction_R1",
+      "LR_junction_R2",
+      "LR_junction_fraction_R2",
+      "annotation",
+      "resolution_candidate_count",
+      "resolution_TSS_count",
+      "resolution_window",
+      "resolution_monoexon",
+      "status_junction_NOT_APPLICABLE",
+      "missingindicator_LR_junction_R1",
+      "missingindicator_LR_junction_fraction_R1",
+      "missingindicator_LR_junction_R2",
+      "missingindicator_LR_junction_fraction_R2"
+    ],
+    "features": [
+      "LR_junction_R1",
+      "LR_junction_fraction_R1",
+      "LR_junction_R2",
+      "LR_junction_fraction_R2",
+      "annotation",
+      "resolution_candidate_count",
+      "resolution_TSS_count",
+      "resolution_window",
+      "resolution_monoexon",
+      "status_junction_NOT_APPLICABLE"
+    ],
+    "wall_seconds": 2.1245297361165285
+  },
+  {
+    "model": "RF10",
+    "outer_fold": 4,
+    "status": "ACCEPTED",
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 6,
+      "min_samples_leaf": 200,
+      "max_features": 0.5
+    },
+    "warning_messages": [],
+    "train_n": 23808,
+    "validation_n": 5802,
+    "selected_inner_enrichment": 1.8024288049083066,
+    "transformed_columns": [
+      "LR_junction_R1",
+      "LR_junction_fraction_R1",
+      "LR_junction_R2",
+      "LR_junction_fraction_R2",
+      "annotation",
+      "resolution_candidate_count",
+      "resolution_TSS_count",
+      "resolution_window",
+      "resolution_monoexon",
+      "status_junction_NOT_APPLICABLE",
+      "missingindicator_LR_junction_R1",
+      "missingindicator_LR_junction_fraction_R1",
+      "missingindicator_LR_junction_R2",
+      "missingindicator_LR_junction_fraction_R2"
+    ],
+    "features": [
+      "LR_junction_R1",
+      "LR_junction_fraction_R1",
+      "LR_junction_R2",
+      "LR_junction_fraction_R2",
+      "annotation",
+      "resolution_candidate_count",
+      "resolution_TSS_count",
+      "resolution_window",
+      "resolution_monoexon",
+      "status_junction_NOT_APPLICABLE"
+    ],
+    "wall_seconds": 2.215461684856564
+  }
+]

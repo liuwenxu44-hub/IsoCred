@@ -1,0 +1,450 @@
+{
+  "stage": "ISO-002C_PHASE1_FAIRNESS_AND_EXTERNAL_FEASIBILITY",
+  "version": "1.0",
+  "created_utc": "2026-09-08T20:45:59.031109+00:00",
+  "state": "FROZEN_BEFORE_NEW_FITS_AFTER_HISTORICAL_FINAL_EXPOSURE",
+  "authority": "User 2026-09-09 approved stage1 of supplied assessment",
+  "project": ".",
+  "execution": "original analysis host only",
+  "evidence_status": "POST_HOC_SECONDARY_AFTER_FINAL_EXPOSURE_DEVELOPMENT_GROUPED_OOF",
+  "original_algorithm_STOP": "UNCHANGED",
+  "phase2_external_validation_authorized": false,
+  "budget": {
+    "phase1_workdays": 8,
+    "external_feasibility_workdays_included": 2,
+    "technical_repair_workdays_included": 1,
+    "hours_per_workday": 8,
+    "model_inner_fits_max": 500,
+    "selected_outer_refit_attempts_max": 25,
+    "no_full_development_refit": true,
+    "no_budget_reset": true,
+    "threads_per_process_group_max": 8
+  },
+  "unit": "one promoter group, one Bernoulli target, no candidate-copy training",
+  "endpoint": {
+    "primary": "existing top-decile enrichment",
+    "positive": "same-strand any exact-member TSS +/-50 inclusive detected >=2/3 original FANTOM5 replicates",
+    "negative": "did not meet reproducible support, not biological absence/function",
+    "ties": "include all exact ties, preserve original definition",
+    "coverage_levels": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "secondary_fractional_boundary": "for fixed exact requested group budget assign same fractional inclusion weight to every boundary-tied group; deterministic expectation under label-independent uniform tie selection, not a deployable unique ordering; do not replace primary"
+  },
+  "eligible_development_groups": 30487,
+  "splits": {
+    "outer": "frozen metadata.inner_fold 0..4; purge all training rows touching held-out dependency components",
+    "inner": "two folds int(SHA256(component|ISO001A_INNER|20260903)[:8] big-endian / 2**64 >=0.5)",
+    "seed": 20260903,
+    "no_repartition": true
+  },
+  "inputs": {
+    "RF14": [
+      "LR_read_R1",
+      "LR_junction_R1",
+      "LR_junction_fraction_R1",
+      "resolution_read_shared_R1",
+      "LR_read_R2",
+      "LR_junction_R2",
+      "LR_junction_fraction_R2",
+      "resolution_read_shared_R2",
+      "annotation",
+      "resolution_candidate_count",
+      "resolution_TSS_count",
+      "resolution_window",
+      "resolution_monoexon",
+      "status_junction_NOT_APPLICABLE"
+    ],
+    "EN14": [
+      "LR_read_R1",
+      "LR_junction_R1",
+      "LR_junction_fraction_R1",
+      "resolution_read_shared_R1",
+      "LR_read_R2",
+      "LR_junction_R2",
+      "LR_junction_fraction_R2",
+      "resolution_read_shared_R2",
+      "annotation",
+      "resolution_candidate_count",
+      "resolution_TSS_count",
+      "resolution_window",
+      "resolution_monoexon",
+      "status_junction_NOT_APPLICABLE"
+    ],
+    "L2_READ": [
+      "LR_read_R1",
+      "LR_read_R2"
+    ],
+    "L2_READ_ANNOTATION": [
+      "LR_read_R1",
+      "LR_read_R2",
+      "annotation"
+    ],
+    "L2_READ_ANNOTATION_OPPORTUNITY": [
+      "LR_read_R1",
+      "LR_read_R2",
+      "annotation",
+      "resolution_TSS_count",
+      "resolution_window"
+    ]
+  },
+  "information": {
+    "expanded_71": "57 group-core columns (status dummies and candidate-to-group means) +14 direct-group columns; not 71 independent raw evidence variables",
+    "minimal_14": "exact existing MAP14 columns, transforms and order",
+    "preprocessing": "identical SimpleImputer median/add_indicator/keep_empty_features then RobustScaler; fit only training fold",
+    "MAP": "reuse accepted historical MAP14 OOF and payload; verify identical per-fold preprocessing; no MAP refit"
+  },
+  "models": {
+    "RF14": {
+      "grid": [
+        {
+          "n_estimators": 300,
+          "max_depth": 6,
+          "min_samples_leaf": 10,
+          "max_features": "sqrt"
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": 6,
+          "min_samples_leaf": 10,
+          "max_features": 0.5
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": 6,
+          "min_samples_leaf": 50,
+          "max_features": "sqrt"
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": 6,
+          "min_samples_leaf": 50,
+          "max_features": 0.5
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": 6,
+          "min_samples_leaf": 200,
+          "max_features": "sqrt"
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": 6,
+          "min_samples_leaf": 200,
+          "max_features": 0.5
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": 12,
+          "min_samples_leaf": 10,
+          "max_features": "sqrt"
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": 12,
+          "min_samples_leaf": 10,
+          "max_features": 0.5
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": 12,
+          "min_samples_leaf": 50,
+          "max_features": "sqrt"
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": 12,
+          "min_samples_leaf": 50,
+          "max_features": 0.5
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": 12,
+          "min_samples_leaf": 200,
+          "max_features": "sqrt"
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": 12,
+          "min_samples_leaf": 200,
+          "max_features": 0.5
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": null,
+          "min_samples_leaf": 10,
+          "max_features": "sqrt"
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": null,
+          "min_samples_leaf": 10,
+          "max_features": 0.5
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": null,
+          "min_samples_leaf": 50,
+          "max_features": "sqrt"
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": null,
+          "min_samples_leaf": 50,
+          "max_features": 0.5
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": null,
+          "min_samples_leaf": 200,
+          "max_features": "sqrt"
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": null,
+          "min_samples_leaf": 200,
+          "max_features": 0.5
+        }
+      ],
+      "random_state": 20260903,
+      "n_jobs": 1,
+      "class_weight": null
+    },
+    "EN14": {
+      "grid": [
+        {
+          "C": 0.01,
+          "l1_ratio": 0.0
+        },
+        {
+          "C": 0.01,
+          "l1_ratio": 0.25
+        },
+        {
+          "C": 0.01,
+          "l1_ratio": 0.5
+        },
+        {
+          "C": 0.01,
+          "l1_ratio": 0.75
+        },
+        {
+          "C": 0.01,
+          "l1_ratio": 1.0
+        },
+        {
+          "C": 0.1,
+          "l1_ratio": 0.0
+        },
+        {
+          "C": 0.1,
+          "l1_ratio": 0.25
+        },
+        {
+          "C": 0.1,
+          "l1_ratio": 0.5
+        },
+        {
+          "C": 0.1,
+          "l1_ratio": 0.75
+        },
+        {
+          "C": 0.1,
+          "l1_ratio": 1.0
+        },
+        {
+          "C": 1.0,
+          "l1_ratio": 0.0
+        },
+        {
+          "C": 1.0,
+          "l1_ratio": 0.25
+        },
+        {
+          "C": 1.0,
+          "l1_ratio": 0.5
+        },
+        {
+          "C": 1.0,
+          "l1_ratio": 0.75
+        },
+        {
+          "C": 1.0,
+          "l1_ratio": 1.0
+        },
+        {
+          "C": 10.0,
+          "l1_ratio": 0.0
+        },
+        {
+          "C": 10.0,
+          "l1_ratio": 0.25
+        },
+        {
+          "C": 10.0,
+          "l1_ratio": 0.5
+        },
+        {
+          "C": 10.0,
+          "l1_ratio": 0.75
+        },
+        {
+          "C": 10.0,
+          "l1_ratio": 1.0
+        }
+      ],
+      "solver": "saga",
+      "penalty": "elasticnet",
+      "max_iter": 5000,
+      "tol": 0.0001,
+      "random_state": 20260903,
+      "n_jobs": 1,
+      "class_weight": null
+    },
+    "L2_controls": {
+      "grid": [
+        {
+          "C": 0.01
+        },
+        {
+          "C": 0.1
+        },
+        {
+          "C": 1.0
+        },
+        {
+          "C": 10.0
+        }
+      ],
+      "solver": "lbfgs",
+      "penalty": "l2",
+      "max_iter": 5000,
+      "tol": 0.0001,
+      "random_state": 20260903,
+      "class_weight": null,
+      "identical_budget_for_three_controls": true
+    }
+  },
+  "selection": "highest arithmetic mean two-inner-fold enrichment among zero-convergence-warning configurations; ties original grid order; one selected outer refit; nonconvergence -> NaN all corresponding OOF predictions, preserve failure, no replacement/iterations/seed repair",
+  "historical_reuse": {
+    "RF71": "original accepted OOF",
+    "EN71": "original OOF with fold3 6264 missing retained",
+    "MAP14": "original accepted OOF",
+    "READ_UNION": "original OOF training-ECDF score",
+    "fixed": [
+      "B0",
+      "B2",
+      "SOURCE_AWARE",
+      "PSQAN_STYLE",
+      "SQANTI3_RULE"
+    ]
+  },
+  "primary_supplementary_contrasts": [
+    [
+      "RF14",
+      "MAP14"
+    ],
+    [
+      "EN14",
+      "MAP14"
+    ],
+    [
+      "RF71",
+      "RF14"
+    ],
+    [
+      "EN71",
+      "EN14"
+    ],
+    [
+      "L2_READ",
+      "READ_UNION"
+    ],
+    [
+      "L2_READ_ANNOTATION",
+      "L2_READ"
+    ],
+    [
+      "L2_READ_ANNOTATION_OPPORTUNITY",
+      "L2_READ_ANNOTATION"
+    ],
+    [
+      "RF71",
+      "L2_READ_ANNOTATION_OPPORTUNITY"
+    ]
+  ],
+  "statistics": {
+    "common_support": "each paired contrast uses exactly same eligible groups; full coverage and EN71 common support separated; no low-score imputation",
+    "bootstrap_draws": 2000,
+    "bootstrap_seed": 20260903,
+    "bootstrap_unit": "inherited merged gene/block/read/junction/window dependence component, retain group multiplicity",
+    "intervals": "95% descriptive paired percentile CI; additionally family-adjusted 99.375% CI across eight declared contrasts; no confirmatory claim after final exposure; no equivalence claim",
+    "metrics": [
+      "pooled OOF top-decile enrichment",
+      "fold-wise enrichment and pair-count-weighted AUC",
+      "pooled AUC",
+      "Brier/log-loss only supervised probabilities",
+      "PPV/scoring coverage/actual selection coverage/prevalence ceiling"
+    ],
+    "strata": {
+      "read": [
+        "0",
+        "1-4",
+        "5-19",
+        "20-99",
+        ">=100"
+      ],
+      "annotation": [
+        "novel-only",
+        "mixed",
+        "known-only"
+      ],
+      "sharing": [
+        "1",
+        "2-4",
+        ">=5"
+      ],
+      "window": [
+        "101",
+        "102-125",
+        ">125"
+      ],
+      "monoexon": [
+        "none",
+        "mixed",
+        "all"
+      ],
+      "caller": [
+        "absent",
+        "partial",
+        "all"
+      ]
+    },
+    "adequacy": {
+      "groups": 200,
+      "positives": 20,
+      "components": 20
+    },
+    "joint_adjustment": "reuse original read x annotation x sharing strata; report all cells, fixed n-weighted summary; descriptive not causal"
+  },
+  "opportunity_audit": "independent union of distinct exact-member TSS intervals; one chromosome and strand per group; verify W/TSS_count/span against frozen metadata; candidate_count not substitute; normalized overlap=1-W/(101*distinct_TSS_count) descriptive only, not additional fitted predictor",
+  "SQANTI3": "local pinned ML static deployment audit only unless safe frozen train-only deployment can be shown; current source blockers recorded, no ML fit by default",
+  "external": "metadata and bounded non-outcome file-chain checks; no external CAGE/QuantSeq evaluation data; no external predictions or second cell model fitting",
+  "decision": "assess meaningful reproducible comparison insight and executable external chain, not winner/significance requirement; external next stage requires new user authorization",
+  "forbidden": [
+    "old asset edits",
+    "new candidate/split/holdout",
+    "full raw E4 directory reads",
+    "new external outcomes",
+    "Davies/A375/global external/exposures",
+    "wet experiments",
+    "new model families",
+    "MAP71",
+    "new seeds or parameter range",
+    "renewed final blind claim",
+    "automatic external phase2",
+    "automatic journal writing/submission/upload"
+  ]
+}

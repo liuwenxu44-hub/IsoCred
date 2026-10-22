@@ -1,0 +1,16 @@
+{
+  "numerical_threads": 1,
+  "observed_process_group_thread_cap": 8,
+  "packages": {
+    "joblib": "1.5.3",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "pyarrow": "14.0.2",
+    "scikit-learn": "1.5.2",
+    "scipy": "1.11.4",
+    "threadpoolctl": "3.6.0"
+  },
+  "python": "3.11.16",
+  "random_seed": 20260903,
+  "platform_requirement": "Linux; cross-platform serialized-checkpoint compatibility not tested"
+}

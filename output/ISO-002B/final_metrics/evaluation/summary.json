@@ -1,0 +1,19 @@
+{
+  "evidence_status": "FINAL_HELDOUT_WITHIN_HEPG2",
+  "membership": 11602,
+  "eligible": 10464,
+  "primary_common": 10464,
+  "primary_positive": 5731,
+  "independent_components": 773,
+  "prevalence": 0.5476873088685015,
+  "theoretical_enrichment_ceiling": 1.8258593613679988,
+  "bootstrap_draws": 2000,
+  "bootstrap_index_stream_sha256": "d1e640925d5feec55bd3b5fee5997792280ec055f62d433d5c86709071674974",
+  "seed": 20260903,
+  "primary_contrasts": [
+    "ISOCRED_MAP minus RANDOM_FOREST",
+    "RANDOM_FOREST minus READ_UNION"
+  ],
+  "interval_policy": "95% descriptive and nominal 97.5% Bonferroni-family intervals for the two primary contrasts; no p-values or significance-driven selection",
+  "no_final_refit": true
+}

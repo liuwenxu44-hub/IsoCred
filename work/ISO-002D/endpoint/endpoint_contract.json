@@ -1,0 +1,164 @@
+{
+  "contract_id": "ISO-002D_CTSS_ENDPOINT_AND_ELIGIBILITY_V1",
+  "created_utc": "2026-09-09T09:44:26.509487+00:00",
+  "scope_sha256": "360b541a032319be77829b8483b68290d4d47e6340c12ba6ed470442d8bf2289",
+  "source_rules": [
+    {
+      "path": "scripts/iso000f_map_ctss_to_members.py",
+      "bytes": 16349,
+      "sha256": "a330d05db94b4d365f1401be7dba12a938006cb37c1bbc2bf4a6083eccce9c5a",
+      "scope": "Original frozen mathematical/source rule read only; no execution of any outcome script"
+    },
+    {
+      "path": "scripts/iso000f_build_promoter_group_outcomes.py",
+      "bytes": 18592,
+      "sha256": "66194a7f2b490810f417722e939f2fe4cbeb70b0014474f262f60ed04d6717a5",
+      "scope": "Original frozen mathematical/source rule read only; no execution of any outcome script"
+    },
+    {
+      "path": "work/ISO-001A/code/extract_development.py",
+      "bytes": 4169,
+      "sha256": "3dd8a3807deb7f1f44c5c1f14317bb30db3d0e1a293256f594f91bc25c840344",
+      "scope": "Original frozen mathematical/source rule read only; no execution of any outcome script"
+    },
+    {
+      "path": "work/ISO-001A/code/prepare_groups.py",
+      "bytes": 9790,
+      "sha256": "19f9abff24b2fc85b63d241609e442485abf3930a938444495904404099a8f30",
+      "scope": "Original frozen mathematical/source rule read only; no execution of any outcome script"
+    },
+    {
+      "path": "work/ISO-002C/code/metrics.py",
+      "bytes": 902,
+      "sha256": "f2034dc2738d1187f58dd12cf8baa179729fd0ccb3d77857f1bff1e238e2c7a4",
+      "scope": "Original frozen mathematical/source rule read only; no execution of any outcome script"
+    }
+  ],
+  "primary": {
+    "unit": "promoter_group_id, one binary target",
+    "position": "BED 0-based chromStart; chromEnd=start+1 required",
+    "raw_signal": "column5 finite nonnegative numeric; >0 detection; zero-valued recorded sites still participate in geometric ambiguity",
+    "strand": "exact same + or -",
+    "window_bp": 50,
+    "boundary": "inclusive, all exact raw member TSS; not representative-only",
+    "pooling": "sum technical counts per exact coordinate/strand within each fixed biosample; retain union of sites including recorded zeros",
+    "bio1": [
+      "GSM5625727",
+      "GSM5625728",
+      "GSM5625729"
+    ],
+    "bio3": [
+      "GSM5625730"
+    ],
+    "target": "at least one supported compatible site in each biological pool, BOTH2/2; positions can differ",
+    "primary_metric": "existing pooled top-decile enrichment",
+    "ties": "include all exact boundary ties; actual selected fraction and scoring coverage reported",
+    "interpretation": "promoter CTSS support event, not transcript function or functional probability"
+  },
+  "eligibility": {
+    "predictions_frozen_for": "ALL structurally legal non-global/non-exposure groups with complete common10 measurement, including eventual assay-ineligible groups",
+    "algorithm_frozen_before_outcomes": true,
+    "realized_mask": "computed by independent extractor AFTER prediction freeze; not falsely called label-blind precomputed eligibility",
+    "allowed_contigs": [
+      "chr1",
+      "chr2",
+      "chr3",
+      "chr4",
+      "chr5",
+      "chr6",
+      "chr7",
+      "chr8",
+      "chr9",
+      "chr10",
+      "chr11",
+      "chr12",
+      "chr13",
+      "chr14",
+      "chr15",
+      "chr16",
+      "chr17",
+      "chr18",
+      "chr19",
+      "chr20",
+      "chr21",
+      "chr22",
+      "chrX",
+      "chrY",
+      "chrM"
+    ],
+    "contig_presence": "must appear in recorded CTSS rows in BOTH biological pools; same original assay semantics; pooled union of technical library contigs",
+    "structural": "valid strand, nonempty all-member TSS, original technical eligibility, all frozen global/exposure exclusions applied",
+    "mapping_enumeration_bp": 100,
+    "mapping_shared": "each recorded CTSS coordinate hits>=2 legal promoter groups within100; zero-signal rows included",
+    "unresolved_exclusion": "ALL_COMPATIBLE_CTSS_PROMOTER_GROUP_SHARED iff group has>=1 shared-compatible observation and no uniquely mapped observation within100; exclude entire such group regardless primary positivity",
+    "negative": "assay-eligible not reproducibly detected, not biological absence",
+    "all_methods_common_mask": true,
+    "mask_counts_and_exclusion_reasons_reported": true,
+    "primary_and_technical_pair_sensitivities_same_mask": true
+  },
+  "sensitivities": {
+    "technical_pairs": [
+      [
+        "GSM5625727",
+        "GSM5625730"
+      ],
+      [
+        "GSM5625728",
+        "GSM5625730"
+      ],
+      [
+        "GSM5625729",
+        "GSM5625730"
+      ]
+    ],
+    "report_all": true,
+    "same_primary_eligible_groups": true,
+    "no_best_pair_selection": true,
+    "no_extra_biological_n": true,
+    "secondary_position_concordant_5bp": "within primary50 windows, any supported coordinate pair across two biosamples distance<=5; subset of primary by construction"
+  },
+  "dependence": {
+    "pre_outcome_component": "merge compatible genes, frozen genomic blocks, shared junctions/reads when available, and same-strand all-member TSS proximity<=200bp covering ambiguity +/-100 sharing; this changes only external bootstrap graph, not promoter definition or historic HepG2 folds",
+    "post_unlock_check": "every actual shared CTSS link within100 must lie within pre-frozen component, else STOP without silently adding outcome-dependent edges",
+    "bootstrap": "2000 paired component-resampling draws, retain all group multiplicities within each sampled component; not bootstrap four libraries or claim components are biological replicates",
+    "seed": 20260903,
+    "paired_scoring_support": "identical eligible finite-score groups for each contrast; no fill-low score"
+  },
+  "metrics": {
+    "primary": "top-decile enrichment",
+    "secondary": [
+      "AUC",
+      "PPV",
+      "actual_selection_coverage",
+      "scoring_coverage",
+      "eligible_prevalence_and_ceiling",
+      "Brier_and_logloss_for_supervised_probabilities_only"
+    ],
+    "fixed_requested_coverages": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "no_equivalence_from_nonsignificance": true,
+    "no_external_threshold_or_calibration_tuning": true
+  },
+  "interpretation": [
+    "new common10 transfer under cell+candidate-generation+alignment-domain shifts",
+    "same donor two biosamples only",
+    "cross-system locus overlap reported, not automatic new-gene generalization",
+    "historical final remains exposed; no old final reuse",
+    "2/2 and HepG2 2/3 enrichment not assumed same absolute measurement scale"
+  ],
+  "unlock": {
+    "required": [
+      "independently accepted candidate declaration-level provenance with runtime limitation",
+      "complete P1 inputs and frozen preprocessing/training protocol",
+      "models frozen",
+      "ALL external predictions frozen and independent fit-disabled replay",
+      "precise CTSS download manifest/checksum-or-official-version metadata recorded"
+    ],
+    "only_four_named_files": true,
+    "full_old_E4_and_global_Davies_A375_forbidden": true,
+    "target_GET_now": false
+  }
+}

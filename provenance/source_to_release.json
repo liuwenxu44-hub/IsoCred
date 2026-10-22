@@ -1,0 +1,2982 @@
+{
+  "schema_version": 1,
+  "status": "PUBLIC_CANDIDATE_NOT_PUBLISHED",
+  "sources": [
+    {
+      "path": "work/ISO-001A/output/data/group_core_label_blind.parquet",
+      "role": "HepG2 development reusable group features",
+      "source_path": "work/ISO-001A/output/data/group_core_label_blind.parquet",
+      "source_sha256": "915c75156469432823fd2e4663c4230b2b459dfb4e75c115c49a111cdd5d182e",
+      "release_sha256": "915c75156469432823fd2e4663c4230b2b459dfb4e75c115c49a111cdd5d182e",
+      "bytes": 3602699,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-001A_freeze_manifest.json",
+          "manifest_sha256": "996651b24bf165bcf76e1ffdc877e3a2da4b4f935f252d96c958d696a1b0bb19",
+          "sha256": "915c75156469432823fd2e4663c4230b2b459dfb4e75c115c49a111cdd5d182e"
+        },
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "915c75156469432823fd2e4663c4230b2b459dfb4e75c115c49a111cdd5d182e"
+        },
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "915c75156469432823fd2e4663c4230b2b459dfb4e75c115c49a111cdd5d182e"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002B/data/group_core_label_blind.parquet",
+      "role": "HepG2 final reusable group features",
+      "source_path": "output/ISO-002B/data/group_core_label_blind.parquet",
+      "source_sha256": "a67cf80a0ee233f8506a866f552a4f63f04b5ad5f4a82ccf1731b5288d18799f",
+      "release_sha256": "a67cf80a0ee233f8506a866f552a4f63f04b5ad5f4a82ccf1731b5288d18799f",
+      "bytes": 4436661,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "a67cf80a0ee233f8506a866f552a4f63f04b5ad5f4a82ccf1731b5288d18799f"
+        },
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "a67cf80a0ee233f8506a866f552a4f63f04b5ad5f4a82ccf1731b5288d18799f"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-001A/output/data/group_metadata_label_blind.parquet",
+      "role": "HepG2 development reusable group features",
+      "source_path": "work/ISO-001A/output/data/group_metadata_label_blind.parquet",
+      "source_sha256": "2df9945cf0f330b17de9787c72881345d5ede921711f64884e2314269515c346",
+      "release_sha256": "2df9945cf0f330b17de9787c72881345d5ede921711f64884e2314269515c346",
+      "bytes": 1182293,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-001A_freeze_manifest.json",
+          "manifest_sha256": "996651b24bf165bcf76e1ffdc877e3a2da4b4f935f252d96c958d696a1b0bb19",
+          "sha256": "2df9945cf0f330b17de9787c72881345d5ede921711f64884e2314269515c346"
+        },
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "2df9945cf0f330b17de9787c72881345d5ede921711f64884e2314269515c346"
+        },
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "2df9945cf0f330b17de9787c72881345d5ede921711f64884e2314269515c346"
+        },
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "2df9945cf0f330b17de9787c72881345d5ede921711f64884e2314269515c346"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002B/data/group_metadata_label_blind.parquet",
+      "role": "HepG2 final reusable group features",
+      "source_path": "output/ISO-002B/data/group_metadata_label_blind.parquet",
+      "source_sha256": "04143548d170a88ea92db9986a73298fb9bb19ebb0cb89e41803fac3801706dd",
+      "release_sha256": "04143548d170a88ea92db9986a73298fb9bb19ebb0cb89e41803fac3801706dd",
+      "bytes": 1469850,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "04143548d170a88ea92db9986a73298fb9bb19ebb0cb89e41803fac3801706dd"
+        },
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "04143548d170a88ea92db9986a73298fb9bb19ebb0cb89e41803fac3801706dd"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-001A/output/data/group_evidence_label_blind.parquet",
+      "role": "HepG2 development reusable group features",
+      "source_path": "work/ISO-001A/output/data/group_evidence_label_blind.parquet",
+      "source_sha256": "22f50ae29b489329e8638c1e6e351539c48e53c6413a62fc406312a83106dbb3",
+      "release_sha256": "22f50ae29b489329e8638c1e6e351539c48e53c6413a62fc406312a83106dbb3",
+      "bytes": 1260898,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-001A_freeze_manifest.json",
+          "manifest_sha256": "996651b24bf165bcf76e1ffdc877e3a2da4b4f935f252d96c958d696a1b0bb19",
+          "sha256": "22f50ae29b489329e8638c1e6e351539c48e53c6413a62fc406312a83106dbb3"
+        },
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "22f50ae29b489329e8638c1e6e351539c48e53c6413a62fc406312a83106dbb3"
+        },
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "22f50ae29b489329e8638c1e6e351539c48e53c6413a62fc406312a83106dbb3"
+        },
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "22f50ae29b489329e8638c1e6e351539c48e53c6413a62fc406312a83106dbb3"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002B/data/group_evidence_label_blind.parquet",
+      "role": "HepG2 final reusable group features",
+      "source_path": "output/ISO-002B/data/group_evidence_label_blind.parquet",
+      "source_sha256": "4efc36660d3a264fa3581d2c5ffa39edb049232f89496388838bdd4c45c7c1e4",
+      "release_sha256": "4efc36660d3a264fa3581d2c5ffa39edb049232f89496388838bdd4c45c7c1e4",
+      "bytes": 1548383,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "4efc36660d3a264fa3581d2c5ffa39edb049232f89496388838bdd4c45c7c1e4"
+        },
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "4efc36660d3a264fa3581d2c5ffa39edb049232f89496388838bdd4c45c7c1e4"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-001A/output/data/group_baselines_label_blind.parquet",
+      "role": "HepG2 development reusable group features",
+      "source_path": "work/ISO-001A/output/data/group_baselines_label_blind.parquet",
+      "source_sha256": "068baffe90aa15ec0699e6106ca1de0d536766c8f9bb1a5a0baba2c97519e9a1",
+      "release_sha256": "068baffe90aa15ec0699e6106ca1de0d536766c8f9bb1a5a0baba2c97519e9a1",
+      "bytes": 1135038,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-001A_freeze_manifest.json",
+          "manifest_sha256": "996651b24bf165bcf76e1ffdc877e3a2da4b4f935f252d96c958d696a1b0bb19",
+          "sha256": "068baffe90aa15ec0699e6106ca1de0d536766c8f9bb1a5a0baba2c97519e9a1"
+        },
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "068baffe90aa15ec0699e6106ca1de0d536766c8f9bb1a5a0baba2c97519e9a1"
+        },
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "068baffe90aa15ec0699e6106ca1de0d536766c8f9bb1a5a0baba2c97519e9a1"
+        },
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "068baffe90aa15ec0699e6106ca1de0d536766c8f9bb1a5a0baba2c97519e9a1"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002B/data/group_baselines_label_blind.parquet",
+      "role": "HepG2 final reusable group features",
+      "source_path": "output/ISO-002B/data/group_baselines_label_blind.parquet",
+      "source_sha256": "a4db1f04619730b8cdb7651e0c44fd04dd00aa0e6f754f1a13abc61945e83ed1",
+      "release_sha256": "a4db1f04619730b8cdb7651e0c44fd04dd00aa0e6f754f1a13abc61945e83ed1",
+      "bytes": 1395365,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "a4db1f04619730b8cdb7651e0c44fd04dd00aa0e6f754f1a13abc61945e83ed1"
+        },
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "a4db1f04619730b8cdb7651e0c44fd04dd00aa0e6f754f1a13abc61945e83ed1"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-001A/output/data/development_E4_v1.parquet",
+      "role": "processed data, prediction or frozen result",
+      "source_path": "work/ISO-001A/output/data/development_E4_v1.parquet",
+      "source_sha256": "ef9bd0b3fcb6a9fca6032d06849162e696aa0ad2651fe6d53113783e4de958f0",
+      "release_sha256": "ef9bd0b3fcb6a9fca6032d06849162e696aa0ad2651fe6d53113783e4de958f0",
+      "bytes": 699365,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-001A_freeze_manifest.json",
+          "manifest_sha256": "996651b24bf165bcf76e1ffdc877e3a2da4b4f935f252d96c958d696a1b0bb19",
+          "sha256": "ef9bd0b3fcb6a9fca6032d06849162e696aa0ad2651fe6d53113783e4de958f0"
+        },
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "ef9bd0b3fcb6a9fca6032d06849162e696aa0ad2651fe6d53113783e4de958f0"
+        },
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "ef9bd0b3fcb6a9fca6032d06849162e696aa0ad2651fe6d53113783e4de958f0"
+        },
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "ef9bd0b3fcb6a9fca6032d06849162e696aa0ad2651fe6d53113783e4de958f0"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-001A/output/results/ISO-001A_development_OOF.parquet",
+      "role": "processed data, prediction or frozen result",
+      "source_path": "work/ISO-001A/output/results/ISO-001A_development_OOF.parquet",
+      "source_sha256": "661b9089ce435cb33fc7413822860bab9b7048e3cb76f68d8e2d05bf83c6e994",
+      "release_sha256": "661b9089ce435cb33fc7413822860bab9b7048e3cb76f68d8e2d05bf83c6e994",
+      "bytes": 3044132,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-001A_freeze_manifest.json",
+          "manifest_sha256": "996651b24bf165bcf76e1ffdc877e3a2da4b4f935f252d96c958d696a1b0bb19",
+          "sha256": "661b9089ce435cb33fc7413822860bab9b7048e3cb76f68d8e2d05bf83c6e994"
+        },
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "661b9089ce435cb33fc7413822860bab9b7048e3cb76f68d8e2d05bf83c6e994"
+        },
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "661b9089ce435cb33fc7413822860bab9b7048e3cb76f68d8e2d05bf83c6e994"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-001A/output/results/ISO-001A_metrics.tsv",
+      "role": "processed data, prediction or frozen result",
+      "source_path": "work/ISO-001A/output/results/ISO-001A_metrics.tsv",
+      "source_sha256": "de775480030c75ce42bf58ef22083d57218dadcf49c85197f129cc8c90ce323f",
+      "release_sha256": "de775480030c75ce42bf58ef22083d57218dadcf49c85197f129cc8c90ce323f",
+      "bytes": 5561,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-001A_freeze_manifest.json",
+          "manifest_sha256": "996651b24bf165bcf76e1ffdc877e3a2da4b4f935f252d96c958d696a1b0bb19",
+          "sha256": "de775480030c75ce42bf58ef22083d57218dadcf49c85197f129cc8c90ce323f"
+        },
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "de775480030c75ce42bf58ef22083d57218dadcf49c85197f129cc8c90ce323f"
+        },
+        {
+          "manifest": "output/ISO-003B/results_locked_for_manuscript.json",
+          "manifest_sha256": "831623714de7e1374bb695e2c9e7d93a243806e715f3488d9d74c8150a568878",
+          "sha256": "de775480030c75ce42bf58ef22083d57218dadcf49c85197f129cc8c90ce323f"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-001A/output/results/ISO-001A_cluster_CI.tsv",
+      "role": "processed data, prediction or frozen result",
+      "source_path": "work/ISO-001A/output/results/ISO-001A_cluster_CI.tsv",
+      "source_sha256": "1e86c99b517b9d0019810e324c6ad9455db45c3d99d1af840454dc6fef76de3f",
+      "release_sha256": "1e86c99b517b9d0019810e324c6ad9455db45c3d99d1af840454dc6fef76de3f",
+      "bytes": 2607,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-001A_freeze_manifest.json",
+          "manifest_sha256": "996651b24bf165bcf76e1ffdc877e3a2da4b4f935f252d96c958d696a1b0bb19",
+          "sha256": "1e86c99b517b9d0019810e324c6ad9455db45c3d99d1af840454dc6fef76de3f"
+        },
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "1e86c99b517b9d0019810e324c6ad9455db45c3d99d1af840454dc6fef76de3f"
+        },
+        {
+          "manifest": "output/ISO-003B/results_locked_for_manuscript.json",
+          "manifest_sha256": "831623714de7e1374bb695e2c9e7d93a243806e715f3488d9d74c8150a568878",
+          "sha256": "1e86c99b517b9d0019810e324c6ad9455db45c3d99d1af840454dc6fef76de3f"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-001A/output/results/ISO-001A_fold_metrics.tsv",
+      "role": "processed data, prediction or frozen result",
+      "source_path": "work/ISO-001A/output/results/ISO-001A_fold_metrics.tsv",
+      "source_sha256": "07e3fc1d57feebfbb0f04ce1f13473b9513dcbae09c3f88bad251f3eb8983bd0",
+      "release_sha256": "07e3fc1d57feebfbb0f04ce1f13473b9513dcbae09c3f88bad251f3eb8983bd0",
+      "bytes": 13483,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-001A_freeze_manifest.json",
+          "manifest_sha256": "996651b24bf165bcf76e1ffdc877e3a2da4b4f935f252d96c958d696a1b0bb19",
+          "sha256": "07e3fc1d57feebfbb0f04ce1f13473b9513dcbae09c3f88bad251f3eb8983bd0"
+        },
+        {
+          "manifest": "output/ISO-003B/results_locked_for_manuscript.json",
+          "manifest_sha256": "831623714de7e1374bb695e2c9e7d93a243806e715f3488d9d74c8150a568878",
+          "sha256": "07e3fc1d57feebfbb0f04ce1f13473b9513dcbae09c3f88bad251f3eb8983bd0"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-001A/output/results/ISO-001A_model_parameters.json",
+      "role": "processed data, prediction or frozen result",
+      "source_path": "work/ISO-001A/output/results/ISO-001A_model_parameters.json",
+      "source_sha256": "a669340ef0ffb9f209783d1099241cdd619937692d2dd62cbc515273ffd6d207",
+      "release_sha256": "a669340ef0ffb9f209783d1099241cdd619937692d2dd62cbc515273ffd6d207",
+      "bytes": 20923,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-001A_freeze_manifest.json",
+          "manifest_sha256": "996651b24bf165bcf76e1ffdc877e3a2da4b4f935f252d96c958d696a1b0bb19",
+          "sha256": "a669340ef0ffb9f209783d1099241cdd619937692d2dd62cbc515273ffd6d207"
+        },
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "a669340ef0ffb9f209783d1099241cdd619937692d2dd62cbc515273ffd6d207"
+        },
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "a669340ef0ffb9f209783d1099241cdd619937692d2dd62cbc515273ffd6d207"
+        },
+        {
+          "manifest": "output/ISO-003B/results_locked_for_manuscript.json",
+          "manifest_sha256": "831623714de7e1374bb695e2c9e7d93a243806e715f3488d9d74c8150a568878",
+          "sha256": "a669340ef0ffb9f209783d1099241cdd619937692d2dd62cbc515273ffd6d207"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-001A/output/results/ISO-001A_outer_fold_audit.tsv",
+      "role": "processed data, prediction or frozen result",
+      "source_path": "work/ISO-001A/output/results/ISO-001A_outer_fold_audit.tsv",
+      "source_sha256": "9d83eea53035fcb07ff7213855c25df00073f2d625c282f1a34833c74cc666c5",
+      "release_sha256": "9d83eea53035fcb07ff7213855c25df00073f2d625c282f1a34833c74cc666c5",
+      "bytes": 366,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-001A_freeze_manifest.json",
+          "manifest_sha256": "996651b24bf165bcf76e1ffdc877e3a2da4b4f935f252d96c958d696a1b0bb19",
+          "sha256": "9d83eea53035fcb07ff7213855c25df00073f2d625c282f1a34833c74cc666c5"
+        },
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "9d83eea53035fcb07ff7213855c25df00073f2d625c282f1a34833c74cc666c5"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-001A/output/results/ISO-001A_grouped_inner_tuning.tsv",
+      "role": "processed data, prediction or frozen result",
+      "source_path": "work/ISO-001A/output/results/ISO-001A_grouped_inner_tuning.tsv",
+      "source_sha256": "4bc11dc61cada09c1788488ba56a533c501d0d5613ae9c0b2174b457dac98421",
+      "release_sha256": "4bc11dc61cada09c1788488ba56a533c501d0d5613ae9c0b2174b457dac98421",
+      "bytes": 86507,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-001A_freeze_manifest.json",
+          "manifest_sha256": "996651b24bf165bcf76e1ffdc877e3a2da4b4f935f252d96c958d696a1b0bb19",
+          "sha256": "4bc11dc61cada09c1788488ba56a533c501d0d5613ae9c0b2174b457dac98421"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002B/data/final_eligibility_label_blind.parquet",
+      "role": "processed data, prediction or frozen result",
+      "source_path": "output/ISO-002B/data/final_eligibility_label_blind.parquet",
+      "source_sha256": "8be2e94a66a839f313398cc7f6f7e02ea21d825091312e7bb4c02f1ab252d1d0",
+      "release_sha256": "8be2e94a66a839f313398cc7f6f7e02ea21d825091312e7bb4c02f1ab252d1d0",
+      "bytes": 199679,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "8be2e94a66a839f313398cc7f6f7e02ea21d825091312e7bb4c02f1ab252d1d0"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002B/final_predictions/ISO-002B_final_predictions.parquet",
+      "role": "processed data, prediction or frozen result",
+      "source_path": "output/ISO-002B/final_predictions/ISO-002B_final_predictions.parquet",
+      "source_sha256": "01e3e2a6406df9ce80083949df8dc21355bbc654d61107634164e295c5868d5d",
+      "release_sha256": "01e3e2a6406df9ce80083949df8dc21355bbc654d61107634164e295c5868d5d",
+      "bytes": 658574,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "01e3e2a6406df9ce80083949df8dc21355bbc654d61107634164e295c5868d5d"
+        },
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "01e3e2a6406df9ce80083949df8dc21355bbc654d61107634164e295c5868d5d"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002B/final_predictions/ISO-002B_final_prediction_coverage.tsv",
+      "role": "processed data, prediction or frozen result",
+      "source_path": "output/ISO-002B/final_predictions/ISO-002B_final_prediction_coverage.tsv",
+      "source_sha256": "81b8203d5ef19a99676a392bfa0a6718aa5cbeec40b68a1bf5cc5479cc2cddde",
+      "release_sha256": "81b8203d5ef19a99676a392bfa0a6718aa5cbeec40b68a1bf5cc5479cc2cddde",
+      "bytes": 368,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "81b8203d5ef19a99676a392bfa0a6718aa5cbeec40b68a1bf5cc5479cc2cddde"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002B/final_metrics/final_E4_eligible_targets.parquet",
+      "role": "processed data, prediction or frozen result",
+      "source_path": "output/ISO-002B/final_metrics/final_E4_eligible_targets.parquet",
+      "source_sha256": "bed01c4ef8abd2246c7d2b3c3a5f2289f79c9a53d3787e409a1c962791315227",
+      "release_sha256": "bed01c4ef8abd2246c7d2b3c3a5f2289f79c9a53d3787e409a1c962791315227",
+      "bytes": 173998,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "bed01c4ef8abd2246c7d2b3c3a5f2289f79c9a53d3787e409a1c962791315227"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002B/models/source_aware_training_reference.parquet",
+      "role": "processed data, prediction or frozen result",
+      "source_path": "output/ISO-002B/models/source_aware_training_reference.parquet",
+      "source_sha256": "36c71cce1ba50ce957226eff48c0eafa3681edf3093e6742add8ca47ce4dadb3",
+      "release_sha256": "36c71cce1ba50ce957226eff48c0eafa3681edf3093e6742add8ca47ce4dadb3",
+      "bytes": 562651,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "36c71cce1ba50ce957226eff48c0eafa3681edf3093e6742add8ca47ce4dadb3"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002B/results/final_model_parameters.json",
+      "role": "processed data, prediction or frozen result",
+      "source_path": "output/ISO-002B/results/final_model_parameters.json",
+      "source_sha256": "1be02433965f99c0739ddf845127c224f9547533d49d90035096785e12a7f8bc",
+      "release_sha256": "1be02433965f99c0739ddf845127c224f9547533d49d90035096785e12a7f8bc",
+      "bytes": 6068,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "1be02433965f99c0739ddf845127c224f9547533d49d90035096785e12a7f8bc"
+        },
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "1be02433965f99c0739ddf845127c224f9547533d49d90035096785e12a7f8bc"
+        },
+        {
+          "manifest": "output/ISO-003B/results_locked_for_manuscript.json",
+          "manifest_sha256": "831623714de7e1374bb695e2c9e7d93a243806e715f3488d9d74c8150a568878",
+          "sha256": "1be02433965f99c0739ddf845127c224f9547533d49d90035096785e12a7f8bc"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002B/results/final_training_inner_tuning.tsv",
+      "role": "processed data, prediction or frozen result",
+      "source_path": "output/ISO-002B/results/final_training_inner_tuning.tsv",
+      "source_sha256": "526ffc5dbc1ba412b7170b0dd82e3f9b5133f0b214cd018926cda2c196d43df1",
+      "release_sha256": "526ffc5dbc1ba412b7170b0dd82e3f9b5133f0b214cd018926cda2c196d43df1",
+      "bytes": 18249,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "526ffc5dbc1ba412b7170b0dd82e3f9b5133f0b214cd018926cda2c196d43df1"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/data/development_fold_metadata.parquet",
+      "role": "processed data, prediction or frozen result",
+      "source_path": "output/ISO-002C/data/development_fold_metadata.parquet",
+      "source_sha256": "d60a672dda668d7c11b1de11868ddf740850e9183c130c3a8aaa7d7030efded5",
+      "release_sha256": "d60a672dda668d7c11b1de11868ddf740850e9183c130c3a8aaa7d7030efded5",
+      "bytes": 533477,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "d60a672dda668d7c11b1de11868ddf740850e9183c130c3a8aaa7d7030efded5"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/data/minimal_development_features.parquet",
+      "role": "processed data, prediction or frozen result",
+      "source_path": "output/ISO-002C/data/minimal_development_features.parquet",
+      "source_sha256": "1896c1b05e2bc669386c8e9b81bc43d2e5b13d1641478fe4b824a04ab6cb1a8e",
+      "release_sha256": "1896c1b05e2bc669386c8e9b81bc43d2e5b13d1641478fe4b824a04ab6cb1a8e",
+      "bytes": 683344,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "1896c1b05e2bc669386c8e9b81bc43d2e5b13d1641478fe4b824a04ab6cb1a8e"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002D/data/WTC11_common10.parquet",
+      "role": "processed data, prediction or frozen result",
+      "source_path": "output/ISO-002D/data/WTC11_common10.parquet",
+      "source_sha256": "2255c40dff3c91471cee91f82d5952e78b9baf6a6be16f5b728b3d5273b66c33",
+      "release_sha256": "2255c40dff3c91471cee91f82d5952e78b9baf6a6be16f5b728b3d5273b66c33",
+      "bytes": 718039,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "2255c40dff3c91471cee91f82d5952e78b9baf6a6be16f5b728b3d5273b66c33"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002D/data/WTC11_group_metadata_label_blind.parquet",
+      "role": "processed data, prediction or frozen result",
+      "source_path": "output/ISO-002D/data/WTC11_group_metadata_label_blind.parquet",
+      "source_sha256": "d421c07159a6e6787b8a7a0d02d398652fc19af03dec283dd5178d3cd3c9810d",
+      "release_sha256": "d421c07159a6e6787b8a7a0d02d398652fc19af03dec283dd5178d3cd3c9810d",
+      "bytes": 1438311,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "d421c07159a6e6787b8a7a0d02d398652fc19af03dec283dd5178d3cd3c9810d"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002D/data/WTC11_group_evidence_label_blind.parquet",
+      "role": "processed data, prediction or frozen result",
+      "source_path": "output/ISO-002D/data/WTC11_group_evidence_label_blind.parquet",
+      "source_sha256": "909f4388e3ec60f2f560f425dfbfb99f33e71157020902f9e6ed1a4911c7a912",
+      "release_sha256": "909f4388e3ec60f2f560f425dfbfb99f33e71157020902f9e6ed1a4911c7a912",
+      "bytes": 664666,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "909f4388e3ec60f2f560f425dfbfb99f33e71157020902f9e6ed1a4911c7a912"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002D/data/WTC11_dependency_components.parquet",
+      "role": "processed data, prediction or frozen result",
+      "source_path": "output/ISO-002D/data/WTC11_dependency_components.parquet",
+      "source_sha256": "c74dfc201e8b6e3487b29f82a2fe35594759390b59eb50166fcc8e2ac3ce5e78",
+      "release_sha256": "c74dfc201e8b6e3487b29f82a2fe35594759390b59eb50166fcc8e2ac3ce5e78",
+      "bytes": 626625,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "c74dfc201e8b6e3487b29f82a2fe35594759390b59eb50166fcc8e2ac3ce5e78"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002D/data/WTC11_simple_diagnostics.parquet",
+      "role": "processed data, prediction or frozen result",
+      "source_path": "output/ISO-002D/data/WTC11_simple_diagnostics.parquet",
+      "source_sha256": "40d2703a0496142a9d0a94cfcd8ccee98fb4111c9e5a3dfad14e342bb609863b",
+      "release_sha256": "40d2703a0496142a9d0a94cfcd8ccee98fb4111c9e5a3dfad14e342bb609863b",
+      "bytes": 721558,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "40d2703a0496142a9d0a94cfcd8ccee98fb4111c9e5a3dfad14e342bb609863b"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002D/predictions/WTC11_all_five_methods.parquet",
+      "role": "processed data, prediction or frozen result",
+      "source_path": "output/ISO-002D/predictions/WTC11_all_five_methods.parquet",
+      "source_sha256": "06662d089a519b00d5d000cffcd09f8dd50d25165f728d5dc8c9631343a6238f",
+      "release_sha256": "06662d089a519b00d5d000cffcd09f8dd50d25165f728d5dc8c9631343a6238f",
+      "bytes": 1646352,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "06662d089a519b00d5d000cffcd09f8dd50d25165f728d5dc8c9631343a6238f"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002D/predictions/WTC11_folds_and_mean.parquet",
+      "role": "processed data, prediction or frozen result",
+      "source_path": "output/ISO-002D/predictions/WTC11_folds_and_mean.parquet",
+      "source_sha256": "f7feaaf1b996d71a66204ce64034821846e5a31f87256bfe086da09c66eb3409",
+      "release_sha256": "f7feaaf1b996d71a66204ce64034821846e5a31f87256bfe086da09c66eb3409",
+      "bytes": 3627089,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "f7feaaf1b996d71a66204ce64034821846e5a31f87256bfe086da09c66eb3409"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002B/final_metrics/evaluation/metrics.tsv",
+      "role": "original final evaluation",
+      "source_path": "output/ISO-002B/final_metrics/evaluation/metrics.tsv",
+      "source_sha256": "12388dc3cce9f7b1600128e619fa2c5017e569952525319b6c566604d9c070d7",
+      "release_sha256": "12388dc3cce9f7b1600128e619fa2c5017e569952525319b6c566604d9c070d7",
+      "bytes": 2985,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "12388dc3cce9f7b1600128e619fa2c5017e569952525319b6c566604d9c070d7"
+        },
+        {
+          "manifest": "output/ISO-003B/results_locked_for_manuscript.json",
+          "manifest_sha256": "831623714de7e1374bb695e2c9e7d93a243806e715f3488d9d74c8150a568878",
+          "sha256": "12388dc3cce9f7b1600128e619fa2c5017e569952525319b6c566604d9c070d7"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002B/final_metrics/evaluation/cluster_intervals.tsv",
+      "role": "original final evaluation",
+      "source_path": "output/ISO-002B/final_metrics/evaluation/cluster_intervals.tsv",
+      "source_sha256": "35cae4b7054fd5ca44e2bca3bab61ac6db725eff9cdbf9942d933b568cbf5058",
+      "release_sha256": "35cae4b7054fd5ca44e2bca3bab61ac6db725eff9cdbf9942d933b568cbf5058",
+      "bytes": 2603,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "35cae4b7054fd5ca44e2bca3bab61ac6db725eff9cdbf9942d933b568cbf5058"
+        },
+        {
+          "manifest": "output/ISO-003B/results_locked_for_manuscript.json",
+          "manifest_sha256": "831623714de7e1374bb695e2c9e7d93a243806e715f3488d9d74c8150a568878",
+          "sha256": "35cae4b7054fd5ca44e2bca3bab61ac6db725eff9cdbf9942d933b568cbf5058"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002B/final_metrics/evaluation/coverage_curves.tsv",
+      "role": "original final evaluation",
+      "source_path": "output/ISO-002B/final_metrics/evaluation/coverage_curves.tsv",
+      "source_sha256": "46db723f0dbfe74208ae815b3a44caf87c379f6d010c636691bb7cfd91af8d6f",
+      "release_sha256": "46db723f0dbfe74208ae815b3a44caf87c379f6d010c636691bb7cfd91af8d6f",
+      "bytes": 3218,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "46db723f0dbfe74208ae815b3a44caf87c379f6d010c636691bb7cfd91af8d6f"
+        },
+        {
+          "manifest": "output/ISO-003B/results_locked_for_manuscript.json",
+          "manifest_sha256": "831623714de7e1374bb695e2c9e7d93a243806e715f3488d9d74c8150a568878",
+          "sha256": "46db723f0dbfe74208ae815b3a44caf87c379f6d010c636691bb7cfd91af8d6f"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002B/final_metrics/evaluation/partial_common_support.tsv",
+      "role": "original final evaluation",
+      "source_path": "output/ISO-002B/final_metrics/evaluation/partial_common_support.tsv",
+      "source_sha256": "24cbabfed12f8e0086ee2157f00512ad6c0dfdbae7a53a5ca2a29f7baabddd91",
+      "release_sha256": "24cbabfed12f8e0086ee2157f00512ad6c0dfdbae7a53a5ca2a29f7baabddd91",
+      "bytes": 1729,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "24cbabfed12f8e0086ee2157f00512ad6c0dfdbae7a53a5ca2a29f7baabddd91"
+        },
+        {
+          "manifest": "output/ISO-003B/results_locked_for_manuscript.json",
+          "manifest_sha256": "831623714de7e1374bb695e2c9e7d93a243806e715f3488d9d74c8150a568878",
+          "sha256": "24cbabfed12f8e0086ee2157f00512ad6c0dfdbae7a53a5ca2a29f7baabddd91"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002B/final_metrics/evaluation/stratified_metrics.tsv",
+      "role": "original final evaluation",
+      "source_path": "output/ISO-002B/final_metrics/evaluation/stratified_metrics.tsv",
+      "source_sha256": "43cf86e9703e76bca7a547a9da6f14b53acecb4d193285a48640ead4b9aa73d4",
+      "release_sha256": "43cf86e9703e76bca7a547a9da6f14b53acecb4d193285a48640ead4b9aa73d4",
+      "bytes": 10846,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "43cf86e9703e76bca7a547a9da6f14b53acecb4d193285a48640ead4b9aa73d4"
+        },
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "43cf86e9703e76bca7a547a9da6f14b53acecb4d193285a48640ead4b9aa73d4"
+        },
+        {
+          "manifest": "output/ISO-003B/results_locked_for_manuscript.json",
+          "manifest_sha256": "831623714de7e1374bb695e2c9e7d93a243806e715f3488d9d74c8150a568878",
+          "sha256": "43cf86e9703e76bca7a547a9da6f14b53acecb4d193285a48640ead4b9aa73d4"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002B/final_metrics/evaluation/summary.json",
+      "role": "original final evaluation",
+      "source_path": "output/ISO-002B/final_metrics/evaluation/summary.json",
+      "source_sha256": "d18c09f8f4bee67dede74b95460e92ff4b243df49ffe0a25692294e9e3f21572",
+      "release_sha256": "d18c09f8f4bee67dede74b95460e92ff4b243df49ffe0a25692294e9e3f21572",
+      "bytes": 722,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "d18c09f8f4bee67dede74b95460e92ff4b243df49ffe0a25692294e9e3f21572"
+        },
+        {
+          "manifest": "output/ISO-003B/results_locked_for_manuscript.json",
+          "manifest_sha256": "831623714de7e1374bb695e2c9e7d93a243806e715f3488d9d74c8150a568878",
+          "sha256": "d18c09f8f4bee67dede74b95460e92ff4b243df49ffe0a25692294e9e3f21572"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/results/RF14_OOF.parquet",
+      "role": "post-holdout development-only result",
+      "source_path": "output/ISO-002C/results/RF14_OOF.parquet",
+      "source_sha256": "37f384486fd3e0003c34f5c324c38abb6144ccc65881e020096c83755a56a7dc",
+      "release_sha256": "37f384486fd3e0003c34f5c324c38abb6144ccc65881e020096c83755a56a7dc",
+      "bytes": 626235,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "37f384486fd3e0003c34f5c324c38abb6144ccc65881e020096c83755a56a7dc"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/results/RF14_fit_parameters.json",
+      "role": "post-holdout development-only result",
+      "source_path": "output/ISO-002C/results/RF14_fit_parameters.json",
+      "source_sha256": "268d181d619489ca073c88fb05bf21f82d7c616204b4dc699975db1d100c7f12",
+      "release_sha256": "268d181d619489ca073c88fb05bf21f82d7c616204b4dc699975db1d100c7f12",
+      "bytes": 7662,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "268d181d619489ca073c88fb05bf21f82d7c616204b4dc699975db1d100c7f12"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/results/RF14_inner_tuning.tsv",
+      "role": "post-holdout development-only result",
+      "source_path": "output/ISO-002C/results/RF14_inner_tuning.tsv",
+      "source_sha256": "4d1e528483382f0eb6bec6d262be3c38170810084732270ad120bb1fbd2906e9",
+      "release_sha256": "4d1e528483382f0eb6bec6d262be3c38170810084732270ad120bb1fbd2906e9",
+      "bytes": 48185,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "4d1e528483382f0eb6bec6d262be3c38170810084732270ad120bb1fbd2906e9"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/models/RF14_fold0.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002C/models/RF14_fold0.joblib",
+      "source_sha256": "70d9331ed2fc7d67ee14ee15df37619d0891cbf46b7b6b50d7f8af31edfbb266",
+      "release_sha256": "70d9331ed2fc7d67ee14ee15df37619d0891cbf46b7b6b50d7f8af31edfbb266",
+      "bytes": 1432429,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "70d9331ed2fc7d67ee14ee15df37619d0891cbf46b7b6b50d7f8af31edfbb266"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/models/RF14_fold1.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002C/models/RF14_fold1.joblib",
+      "source_sha256": "ab07b1405fee7e48f36b2b7d484ef8af449e142daff2cb222d690f5215401020",
+      "release_sha256": "ab07b1405fee7e48f36b2b7d484ef8af449e142daff2cb222d690f5215401020",
+      "bytes": 1211631,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "ab07b1405fee7e48f36b2b7d484ef8af449e142daff2cb222d690f5215401020"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/models/RF14_fold2.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002C/models/RF14_fold2.joblib",
+      "source_sha256": "af670ad57d6317d0de82f427b1a8aa93f994753d1b172cf425f86c3a4826f33a",
+      "release_sha256": "af670ad57d6317d0de82f427b1a8aa93f994753d1b172cf425f86c3a4826f33a",
+      "bytes": 1221695,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "af670ad57d6317d0de82f427b1a8aa93f994753d1b172cf425f86c3a4826f33a"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/models/RF14_fold3.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002C/models/RF14_fold3.joblib",
+      "source_sha256": "55e65f528befea42ce229533cdc0637258558bb2fb0a983d4fad0bf8a25b574d",
+      "release_sha256": "55e65f528befea42ce229533cdc0637258558bb2fb0a983d4fad0bf8a25b574d",
+      "bytes": 6114233,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "55e65f528befea42ce229533cdc0637258558bb2fb0a983d4fad0bf8a25b574d"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/models/RF14_fold4.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002C/models/RF14_fold4.joblib",
+      "source_sha256": "20f99dcd3fd6ae0d73f8e9ef98cb629948aeb7190fe6a37fe9e1cb7dee7df469",
+      "release_sha256": "20f99dcd3fd6ae0d73f8e9ef98cb629948aeb7190fe6a37fe9e1cb7dee7df469",
+      "bytes": 1074040,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "20f99dcd3fd6ae0d73f8e9ef98cb629948aeb7190fe6a37fe9e1cb7dee7df469"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/results/EN14_OOF.parquet",
+      "role": "post-holdout development-only result",
+      "source_path": "output/ISO-002C/results/EN14_OOF.parquet",
+      "source_sha256": "4dea3c52567ca78f94b8b3f5f2e051550f0d74526a7474760ed2b5038f2c7b9b",
+      "release_sha256": "4dea3c52567ca78f94b8b3f5f2e051550f0d74526a7474760ed2b5038f2c7b9b",
+      "bytes": 639132,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "4dea3c52567ca78f94b8b3f5f2e051550f0d74526a7474760ed2b5038f2c7b9b"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/results/EN14_fit_parameters.json",
+      "role": "post-holdout development-only result",
+      "source_path": "output/ISO-002C/results/EN14_fit_parameters.json",
+      "source_sha256": "df343976560edaf0be935e9965b492aa2a3f802443a2d2776a4d75e6bd761cf2",
+      "release_sha256": "df343976560edaf0be935e9965b492aa2a3f802443a2d2776a4d75e6bd761cf2",
+      "bytes": 7314,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "df343976560edaf0be935e9965b492aa2a3f802443a2d2776a4d75e6bd761cf2"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/results/EN14_inner_tuning.tsv",
+      "role": "post-holdout development-only result",
+      "source_path": "output/ISO-002C/results/EN14_inner_tuning.tsv",
+      "source_sha256": "248005a41e66532276f34868802ac4b4d58fa4f14e142f342a48f7e93422505b",
+      "release_sha256": "248005a41e66532276f34868802ac4b4d58fa4f14e142f342a48f7e93422505b",
+      "bytes": 41480,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "248005a41e66532276f34868802ac4b4d58fa4f14e142f342a48f7e93422505b"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/models/EN14_fold0.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002C/models/EN14_fold0.joblib",
+      "source_sha256": "e2e5c4cbafba3d2e570f5d2a0cdb15bc23b1a556d961e4015b881a557e8f0cc1",
+      "release_sha256": "e2e5c4cbafba3d2e570f5d2a0cdb15bc23b1a556d961e4015b881a557e8f0cc1",
+      "bytes": 492055,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "e2e5c4cbafba3d2e570f5d2a0cdb15bc23b1a556d961e4015b881a557e8f0cc1"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/models/EN14_fold1.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002C/models/EN14_fold1.joblib",
+      "source_sha256": "33ca6c2461e0d72b2f1f82a3093dacb0b1e63e29437334ef3c0c55747981aad9",
+      "release_sha256": "33ca6c2461e0d72b2f1f82a3093dacb0b1e63e29437334ef3c0c55747981aad9",
+      "bytes": 487750,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "33ca6c2461e0d72b2f1f82a3093dacb0b1e63e29437334ef3c0c55747981aad9"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/models/EN14_fold2.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002C/models/EN14_fold2.joblib",
+      "source_sha256": "3514da3b0a10aa301ca1a9e9c6c85a025587e9e712e12c6e822ca856ed3d975e",
+      "release_sha256": "3514da3b0a10aa301ca1a9e9c6c85a025587e9e712e12c6e822ca856ed3d975e",
+      "bytes": 486741,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "3514da3b0a10aa301ca1a9e9c6c85a025587e9e712e12c6e822ca856ed3d975e"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/models/EN14_fold3.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002C/models/EN14_fold3.joblib",
+      "source_sha256": "a282c91779b78ebec96db8c9cbda777916b15e8ef57d96dc0942071318b5bcd9",
+      "release_sha256": "a282c91779b78ebec96db8c9cbda777916b15e8ef57d96dc0942071318b5bcd9",
+      "bytes": 488374,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "a282c91779b78ebec96db8c9cbda777916b15e8ef57d96dc0942071318b5bcd9"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/models/EN14_fold4.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002C/models/EN14_fold4.joblib",
+      "source_sha256": "a2454e8375063606f6b06378ef8e9e8371afba7de6cd8cc976ca29b05bff31d4",
+      "release_sha256": "a2454e8375063606f6b06378ef8e9e8371afba7de6cd8cc976ca29b05bff31d4",
+      "bytes": 488834,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "a2454e8375063606f6b06378ef8e9e8371afba7de6cd8cc976ca29b05bff31d4"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/results/L2_READ_OOF.parquet",
+      "role": "post-holdout development-only result",
+      "source_path": "output/ISO-002C/results/L2_READ_OOF.parquet",
+      "source_sha256": "9575c66a8226f8ed1cc90f139c7220c6464c7c2d00c96cc7415cfbad9a0af176",
+      "release_sha256": "9575c66a8226f8ed1cc90f139c7220c6464c7c2d00c96cc7415cfbad9a0af176",
+      "bytes": 505468,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "9575c66a8226f8ed1cc90f139c7220c6464c7c2d00c96cc7415cfbad9a0af176"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/results/L2_READ_fit_parameters.json",
+      "role": "post-holdout development-only result",
+      "source_path": "output/ISO-002C/results/L2_READ_fit_parameters.json",
+      "source_sha256": "fc9025bb2940393da5a29f48ee534b1255621ec1a01e0fcf0b1a11aae79c59b5",
+      "release_sha256": "fc9025bb2940393da5a29f48ee534b1255621ec1a01e0fcf0b1a11aae79c59b5",
+      "bytes": 2137,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "fc9025bb2940393da5a29f48ee534b1255621ec1a01e0fcf0b1a11aae79c59b5"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/results/L2_READ_inner_tuning.tsv",
+      "role": "post-holdout development-only result",
+      "source_path": "output/ISO-002C/results/L2_READ_inner_tuning.tsv",
+      "source_sha256": "7d9de343d47f6b4e89f3b0cc800a5f91a71d9741c6084c9645df34a7e8a8460e",
+      "release_sha256": "7d9de343d47f6b4e89f3b0cc800a5f91a71d9741c6084c9645df34a7e8a8460e",
+      "bytes": 7704,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "7d9de343d47f6b4e89f3b0cc800a5f91a71d9741c6084c9645df34a7e8a8460e"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/models/L2_READ_fold0.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002C/models/L2_READ_fold0.joblib",
+      "source_sha256": "405e4bc1fb44320efff78495feadf0d1e8ab171bc0f32535bb629430a33a88a5",
+      "release_sha256": "405e4bc1fb44320efff78495feadf0d1e8ab171bc0f32535bb629430a33a88a5",
+      "bytes": 491553,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "405e4bc1fb44320efff78495feadf0d1e8ab171bc0f32535bb629430a33a88a5"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/models/L2_READ_fold1.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002C/models/L2_READ_fold1.joblib",
+      "source_sha256": "99f6df75adba48384e5b74d05630e9a00882e0bd25447390487865e23794c4ce",
+      "release_sha256": "99f6df75adba48384e5b74d05630e9a00882e0bd25447390487865e23794c4ce",
+      "bytes": 487279,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "99f6df75adba48384e5b74d05630e9a00882e0bd25447390487865e23794c4ce"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/models/L2_READ_fold2.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002C/models/L2_READ_fold2.joblib",
+      "source_sha256": "cf0a7778523da8b43d215d2c5800f47a0f3f629894795a5cc2680a73456eb01f",
+      "release_sha256": "cf0a7778523da8b43d215d2c5800f47a0f3f629894795a5cc2680a73456eb01f",
+      "bytes": 486242,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "cf0a7778523da8b43d215d2c5800f47a0f3f629894795a5cc2680a73456eb01f"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/models/L2_READ_fold3.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002C/models/L2_READ_fold3.joblib",
+      "source_sha256": "cdec910ba02a09cea72137acd77c0eb8928b35c04fbd513b8d51f9734ff13321",
+      "release_sha256": "cdec910ba02a09cea72137acd77c0eb8928b35c04fbd513b8d51f9734ff13321",
+      "bytes": 487840,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "cdec910ba02a09cea72137acd77c0eb8928b35c04fbd513b8d51f9734ff13321"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/models/L2_READ_fold4.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002C/models/L2_READ_fold4.joblib",
+      "source_sha256": "3743acc66c1c9d4d35b4341e550e823f883c9ec00a7c7249dbf8798340a5fa2b",
+      "release_sha256": "3743acc66c1c9d4d35b4341e550e823f883c9ec00a7c7249dbf8798340a5fa2b",
+      "bytes": 488326,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "3743acc66c1c9d4d35b4341e550e823f883c9ec00a7c7249dbf8798340a5fa2b"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/results/L2_READ_ANNOTATION_OOF.parquet",
+      "role": "post-holdout development-only result",
+      "source_path": "output/ISO-002C/results/L2_READ_ANNOTATION_OOF.parquet",
+      "source_sha256": "a2eff4c1fbb132bb2d19a730720ddd6fe5c602d079f7904f299fac80efc3344c",
+      "release_sha256": "a2eff4c1fbb132bb2d19a730720ddd6fe5c602d079f7904f299fac80efc3344c",
+      "bytes": 525936,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "a2eff4c1fbb132bb2d19a730720ddd6fe5c602d079f7904f299fac80efc3344c"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/results/L2_READ_ANNOTATION_fit_parameters.json",
+      "role": "post-holdout development-only result",
+      "source_path": "output/ISO-002C/results/L2_READ_ANNOTATION_fit_parameters.json",
+      "source_sha256": "c74bad589e8ba8eb12a9541b1b7a394f82701afaaf8842563a4ed1f4d449932e",
+      "release_sha256": "c74bad589e8ba8eb12a9541b1b7a394f82701afaaf8842563a4ed1f4d449932e",
+      "bytes": 2391,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "c74bad589e8ba8eb12a9541b1b7a394f82701afaaf8842563a4ed1f4d449932e"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/results/L2_READ_ANNOTATION_inner_tuning.tsv",
+      "role": "post-holdout development-only result",
+      "source_path": "output/ISO-002C/results/L2_READ_ANNOTATION_inner_tuning.tsv",
+      "source_sha256": "74c70827f80bb907e8a1bfe60494d80dcad50039eeb2961013b919bcc72b3155",
+      "release_sha256": "74c70827f80bb907e8a1bfe60494d80dcad50039eeb2961013b919bcc72b3155",
+      "bytes": 8241,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "74c70827f80bb907e8a1bfe60494d80dcad50039eeb2961013b919bcc72b3155"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/models/L2_READ_ANNOTATION_fold0.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002C/models/L2_READ_ANNOTATION_fold0.joblib",
+      "source_sha256": "9b43b0b4e197746cc19f17f35273f4ae24006626f84075d4741aa8e0509515a1",
+      "release_sha256": "9b43b0b4e197746cc19f17f35273f4ae24006626f84075d4741aa8e0509515a1",
+      "bytes": 491589,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "9b43b0b4e197746cc19f17f35273f4ae24006626f84075d4741aa8e0509515a1"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/models/L2_READ_ANNOTATION_fold1.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002C/models/L2_READ_ANNOTATION_fold1.joblib",
+      "source_sha256": "4b2a358d0556822a2626e92e14587c72ba1ceaeaa1584d3e7a2d2f4bd0207248",
+      "release_sha256": "4b2a358d0556822a2626e92e14587c72ba1ceaeaa1584d3e7a2d2f4bd0207248",
+      "bytes": 487323,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "4b2a358d0556822a2626e92e14587c72ba1ceaeaa1584d3e7a2d2f4bd0207248"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/models/L2_READ_ANNOTATION_fold2.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002C/models/L2_READ_ANNOTATION_fold2.joblib",
+      "source_sha256": "de6688e5d6a452499d3731451713d2e6b040e8a897c8f813e400a16c1b23b9d2",
+      "release_sha256": "de6688e5d6a452499d3731451713d2e6b040e8a897c8f813e400a16c1b23b9d2",
+      "bytes": 486269,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "de6688e5d6a452499d3731451713d2e6b040e8a897c8f813e400a16c1b23b9d2"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/models/L2_READ_ANNOTATION_fold3.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002C/models/L2_READ_ANNOTATION_fold3.joblib",
+      "source_sha256": "a29ed6ac682a6bb18381e715e3d8508bb9648ca11b010b69bb3a48bb76081a0e",
+      "release_sha256": "a29ed6ac682a6bb18381e715e3d8508bb9648ca11b010b69bb3a48bb76081a0e",
+      "bytes": 487875,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "a29ed6ac682a6bb18381e715e3d8508bb9648ca11b010b69bb3a48bb76081a0e"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/models/L2_READ_ANNOTATION_fold4.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002C/models/L2_READ_ANNOTATION_fold4.joblib",
+      "source_sha256": "b4a607a2b862926e6252918f07c72321a59b7e391f807c4a7a846861297303f3",
+      "release_sha256": "b4a607a2b862926e6252918f07c72321a59b7e391f807c4a7a846861297303f3",
+      "bytes": 488372,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "b4a607a2b862926e6252918f07c72321a59b7e391f807c4a7a846861297303f3"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/results/L2_READ_ANNOTATION_OPPORTUNITY_OOF.parquet",
+      "role": "post-holdout development-only result",
+      "source_path": "output/ISO-002C/results/L2_READ_ANNOTATION_OPPORTUNITY_OOF.parquet",
+      "source_sha256": "b55085a9310500d68e581a968b5a1152dbf65ce7ed42238b9530ef1d03a10bb7",
+      "release_sha256": "b55085a9310500d68e581a968b5a1152dbf65ce7ed42238b9530ef1d03a10bb7",
+      "bytes": 537334,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "b55085a9310500d68e581a968b5a1152dbf65ce7ed42238b9530ef1d03a10bb7"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/results/L2_READ_ANNOTATION_OPPORTUNITY_fit_parameters.json",
+      "role": "post-holdout development-only result",
+      "source_path": "output/ISO-002C/results/L2_READ_ANNOTATION_OPPORTUNITY_fit_parameters.json",
+      "source_sha256": "65bc9fa5e93f9732b9064380c01a83d29a6b5d90aa26257d629f350286c34f24",
+      "release_sha256": "65bc9fa5e93f9732b9064380c01a83d29a6b5d90aa26257d629f350286c34f24",
+      "bytes": 3020,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "65bc9fa5e93f9732b9064380c01a83d29a6b5d90aa26257d629f350286c34f24"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/results/L2_READ_ANNOTATION_OPPORTUNITY_inner_tuning.tsv",
+      "role": "post-holdout development-only result",
+      "source_path": "output/ISO-002C/results/L2_READ_ANNOTATION_OPPORTUNITY_inner_tuning.tsv",
+      "source_sha256": "0e91e233f4a29235fa68ce4b375d9cb9701f61a223e8a5713936bf2cedf4e28f",
+      "release_sha256": "0e91e233f4a29235fa68ce4b375d9cb9701f61a223e8a5713936bf2cedf4e28f",
+      "bytes": 8724,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "0e91e233f4a29235fa68ce4b375d9cb9701f61a223e8a5713936bf2cedf4e28f"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/models/L2_READ_ANNOTATION_OPPORTUNITY_fold0.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002C/models/L2_READ_ANNOTATION_OPPORTUNITY_fold0.joblib",
+      "source_sha256": "8dada6411e3658c00fee784f5a7a9cda0d80c0891ac2617db01c426bc3130334",
+      "release_sha256": "8dada6411e3658c00fee784f5a7a9cda0d80c0891ac2617db01c426bc3130334",
+      "bytes": 491657,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "8dada6411e3658c00fee784f5a7a9cda0d80c0891ac2617db01c426bc3130334"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/models/L2_READ_ANNOTATION_OPPORTUNITY_fold1.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002C/models/L2_READ_ANNOTATION_OPPORTUNITY_fold1.joblib",
+      "source_sha256": "c65d346add4cefbd3824553d7c583cbf3b6a44aa340f2842ae9436b7b3b18c58",
+      "release_sha256": "c65d346add4cefbd3824553d7c583cbf3b6a44aa340f2842ae9436b7b3b18c58",
+      "bytes": 487391,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "c65d346add4cefbd3824553d7c583cbf3b6a44aa340f2842ae9436b7b3b18c58"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/models/L2_READ_ANNOTATION_OPPORTUNITY_fold2.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002C/models/L2_READ_ANNOTATION_OPPORTUNITY_fold2.joblib",
+      "source_sha256": "bc50979da2b68419bb7f7458b9c3da22439218c3d084147cc14b9b2f224e4439",
+      "release_sha256": "bc50979da2b68419bb7f7458b9c3da22439218c3d084147cc14b9b2f224e4439",
+      "bytes": 486339,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "bc50979da2b68419bb7f7458b9c3da22439218c3d084147cc14b9b2f224e4439"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/models/L2_READ_ANNOTATION_OPPORTUNITY_fold3.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002C/models/L2_READ_ANNOTATION_OPPORTUNITY_fold3.joblib",
+      "source_sha256": "a329f8a0c2d8a174878f7c3991bf3fd16cf83e8e21ca5841edfd02e4782541b8",
+      "release_sha256": "a329f8a0c2d8a174878f7c3991bf3fd16cf83e8e21ca5841edfd02e4782541b8",
+      "bytes": 487961,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "a329f8a0c2d8a174878f7c3991bf3fd16cf83e8e21ca5841edfd02e4782541b8"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002C/models/L2_READ_ANNOTATION_OPPORTUNITY_fold4.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002C/models/L2_READ_ANNOTATION_OPPORTUNITY_fold4.joblib",
+      "source_sha256": "4fac1dc1a20ad07fcdb5b9888f850f1639110753887f76758e574acdd593a152",
+      "release_sha256": "4fac1dc1a20ad07fcdb5b9888f850f1639110753887f76758e574acdd593a152",
+      "bytes": 488437,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "4fac1dc1a20ad07fcdb5b9888f850f1639110753887f76758e574acdd593a152"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002D/results/RF10_OOF.parquet",
+      "role": "common10 development result",
+      "source_path": "output/ISO-002D/results/RF10_OOF.parquet",
+      "source_sha256": "020a8f591c9da5ff8758e4820a06ca3d433dfc1e6fa974538208ac8e466c12e1",
+      "release_sha256": "020a8f591c9da5ff8758e4820a06ca3d433dfc1e6fa974538208ac8e466c12e1",
+      "bytes": 601341,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "020a8f591c9da5ff8758e4820a06ca3d433dfc1e6fa974538208ac8e466c12e1"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002D/results/RF10_fit_parameters.json",
+      "role": "common10 development result",
+      "source_path": "output/ISO-002D/results/RF10_fit_parameters.json",
+      "source_sha256": "6f69eaaf2b675230e09c51c752b87f23b4f5c5c03f15e713583a9d2c61199ec4",
+      "release_sha256": "6f69eaaf2b675230e09c51c752b87f23b4f5c5c03f15e713583a9d2c61199ec4",
+      "bytes": 6044,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "6f69eaaf2b675230e09c51c752b87f23b4f5c5c03f15e713583a9d2c61199ec4"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002D/results/RF10_inner_tuning.tsv",
+      "role": "common10 development result",
+      "source_path": "output/ISO-002D/results/RF10_inner_tuning.tsv",
+      "source_sha256": "0c23bf58e3bb3743eebbabc37271472675c248a6c8b109120c6e37183e5a503c",
+      "release_sha256": "0c23bf58e3bb3743eebbabc37271472675c248a6c8b109120c6e37183e5a503c",
+      "bytes": 65651,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "0c23bf58e3bb3743eebbabc37271472675c248a6c8b109120c6e37183e5a503c"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002D/models/RF10_fold0.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002D/models/RF10_fold0.joblib",
+      "source_sha256": "4d685043ccb02ead23fb2da59b7b9ad80551a355c159e9322766d1ee9e259b8d",
+      "release_sha256": "4d685043ccb02ead23fb2da59b7b9ad80551a355c159e9322766d1ee9e259b8d",
+      "bytes": 1759065,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "4d685043ccb02ead23fb2da59b7b9ad80551a355c159e9322766d1ee9e259b8d"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002D/models/RF10_fold1.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002D/models/RF10_fold1.joblib",
+      "source_sha256": "2aded4f38901f99c051da2f4d0e951dccf158e5322a8d006418224f192d1bda4",
+      "release_sha256": "2aded4f38901f99c051da2f4d0e951dccf158e5322a8d006418224f192d1bda4",
+      "bytes": 3268428,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "2aded4f38901f99c051da2f4d0e951dccf158e5322a8d006418224f192d1bda4"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002D/models/RF10_fold2.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002D/models/RF10_fold2.joblib",
+      "source_sha256": "deae6a7cd2706790990c19f4ca10bbf14f4c4137fdefeceb46ca43fc34041405",
+      "release_sha256": "deae6a7cd2706790990c19f4ca10bbf14f4c4137fdefeceb46ca43fc34041405",
+      "bytes": 1696750,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "deae6a7cd2706790990c19f4ca10bbf14f4c4137fdefeceb46ca43fc34041405"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002D/models/RF10_fold3.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002D/models/RF10_fold3.joblib",
+      "source_sha256": "295dc0014866ab12b5e314c7355f031e27f5b4bbf7bdee2ac904b28b1028a327",
+      "release_sha256": "295dc0014866ab12b5e314c7355f031e27f5b4bbf7bdee2ac904b28b1028a327",
+      "bytes": 922426,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "295dc0014866ab12b5e314c7355f031e27f5b4bbf7bdee2ac904b28b1028a327"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002D/models/RF10_fold4.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002D/models/RF10_fold4.joblib",
+      "source_sha256": "ea36266e6a6bb055193df39509466f0107aa2a0c5acb49abb80318188a621cf9",
+      "release_sha256": "ea36266e6a6bb055193df39509466f0107aa2a0c5acb49abb80318188a621cf9",
+      "bytes": 935677,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "ea36266e6a6bb055193df39509466f0107aa2a0c5acb49abb80318188a621cf9"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002D/results/EN10_OOF.parquet",
+      "role": "common10 development result",
+      "source_path": "output/ISO-002D/results/EN10_OOF.parquet",
+      "source_sha256": "1bc9571bd2fce567b1b32d2d914850426ec3acdb6020d130b3c36e862dd8c5c7",
+      "release_sha256": "1bc9571bd2fce567b1b32d2d914850426ec3acdb6020d130b3c36e862dd8c5c7",
+      "bytes": 611219,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "1bc9571bd2fce567b1b32d2d914850426ec3acdb6020d130b3c36e862dd8c5c7"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002D/results/EN10_fit_parameters.json",
+      "role": "common10 development result",
+      "source_path": "output/ISO-002D/results/EN10_fit_parameters.json",
+      "source_sha256": "d27fee7e001871c4014fc8a4b1d32fafb7215dcbec1b3682c43ad12d0d611d31",
+      "release_sha256": "d27fee7e001871c4014fc8a4b1d32fafb7215dcbec1b3682c43ad12d0d611d31",
+      "bytes": 5699,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "d27fee7e001871c4014fc8a4b1d32fafb7215dcbec1b3682c43ad12d0d611d31"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002D/results/EN10_inner_tuning.tsv",
+      "role": "common10 development result",
+      "source_path": "output/ISO-002D/results/EN10_inner_tuning.tsv",
+      "source_sha256": "2b710b476086f91af3760ce290676e4dc56a7500420fafc4597a2db3ab8dba5c",
+      "release_sha256": "2b710b476086f91af3760ce290676e4dc56a7500420fafc4597a2db3ab8dba5c",
+      "bytes": 60566,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "2b710b476086f91af3760ce290676e4dc56a7500420fafc4597a2db3ab8dba5c"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002D/models/EN10_fold0.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002D/models/EN10_fold0.joblib",
+      "source_sha256": "5e10002dcf83d3b71f0314a7c3e91187f523f2f98de22b131fbd2010f4f348f1",
+      "release_sha256": "5e10002dcf83d3b71f0314a7c3e91187f523f2f98de22b131fbd2010f4f348f1",
+      "bytes": 491928,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "5e10002dcf83d3b71f0314a7c3e91187f523f2f98de22b131fbd2010f4f348f1"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002D/models/EN10_fold1.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002D/models/EN10_fold1.joblib",
+      "source_sha256": "2e1471567527e3d20ae6a2df9e15da38318aac1b3510fa3cac858ea8caf7c81d",
+      "release_sha256": "2e1471567527e3d20ae6a2df9e15da38318aac1b3510fa3cac858ea8caf7c81d",
+      "bytes": 487657,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "2e1471567527e3d20ae6a2df9e15da38318aac1b3510fa3cac858ea8caf7c81d"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002D/models/EN10_fold2.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002D/models/EN10_fold2.joblib",
+      "source_sha256": "e8a8346d0b19806da6274e987ab2667e859b04b838a5a97861ff7518e85bd64b",
+      "release_sha256": "e8a8346d0b19806da6274e987ab2667e859b04b838a5a97861ff7518e85bd64b",
+      "bytes": 486609,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "e8a8346d0b19806da6274e987ab2667e859b04b838a5a97861ff7518e85bd64b"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002D/models/EN10_fold3.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002D/models/EN10_fold3.joblib",
+      "source_sha256": "1e1c073c8ea51bd1cd11e75a06ea8ebdb6ea5f3b065b9350f0470063ea9df619",
+      "release_sha256": "1e1c073c8ea51bd1cd11e75a06ea8ebdb6ea5f3b065b9350f0470063ea9df619",
+      "bytes": 488233,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "1e1c073c8ea51bd1cd11e75a06ea8ebdb6ea5f3b065b9350f0470063ea9df619"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002D/models/EN10_fold4.joblib",
+      "role": "trusted fitted checkpoint",
+      "source_path": "output/ISO-002D/models/EN10_fold4.joblib",
+      "source_sha256": "a88bf07758f14abfc7852c95b7e7dfe1dc81f7fcbf831eb20d716c5825c56e7b",
+      "release_sha256": "a88bf07758f14abfc7852c95b7e7dfe1dc81f7fcbf831eb20d716c5825c56e7b",
+      "bytes": 488706,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "a88bf07758f14abfc7852c95b7e7dfe1dc81f7fcbf831eb20d716c5825c56e7b"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002B/models/ISOCRED_MAP_final.joblib",
+      "role": "trusted fitted checkpoint; failed status retained",
+      "source_path": "output/ISO-002B/models/ISOCRED_MAP_final.joblib",
+      "source_sha256": "1b85cfb85e7d21bc578af4d2bf58ca5af1267fc3fc6be3dd19cab2e6f71d3c81",
+      "release_sha256": "1b85cfb85e7d21bc578af4d2bf58ca5af1267fc3fc6be3dd19cab2e6f71d3c81",
+      "bytes": 571257,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "1b85cfb85e7d21bc578af4d2bf58ca5af1267fc3fc6be3dd19cab2e6f71d3c81"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002B/models/RANDOM_FOREST_final.joblib",
+      "role": "trusted fitted checkpoint; failed status retained",
+      "source_path": "output/ISO-002B/models/RANDOM_FOREST_final.joblib",
+      "source_sha256": "3b0d9f20fef7b72ac607da90521ae0795624dacf7c937bcb5c9803a397c41f3c",
+      "release_sha256": "3b0d9f20fef7b72ac607da90521ae0795624dacf7c937bcb5c9803a397c41f3c",
+      "bytes": 5839219,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "3b0d9f20fef7b72ac607da90521ae0795624dacf7c937bcb5c9803a397c41f3c"
+        }
+      ]
+    },
+    {
+      "path": "output/ISO-002B/models/ELASTIC_NET_final.joblib",
+      "role": "trusted fitted checkpoint; failed status retained",
+      "source_path": "output/ISO-002B/models/ELASTIC_NET_final.joblib",
+      "source_sha256": "6f1c43bcbc368e3db7bc4637aa619f303c18e0fe31b80b8961e6bfd2fae4cdee",
+      "release_sha256": "6f1c43bcbc368e3db7bc4637aa619f303c18e0fe31b80b8961e6bfd2fae4cdee",
+      "bytes": 508892,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "6f1c43bcbc368e3db7bc4637aa619f303c18e0fe31b80b8961e6bfd2fae4cdee"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002C/evaluation/results_A/model_metrics.tsv",
+      "role": "frozen post-holdout development evaluation",
+      "source_path": "work/ISO-002C/evaluation/results_A/model_metrics.tsv",
+      "source_sha256": "324b7b40986e8994917fa0d774b87c4cea7e4571c5dc32bfdfd99350618a8e4b",
+      "release_sha256": "324b7b40986e8994917fa0d774b87c4cea7e4571c5dc32bfdfd99350618a8e4b",
+      "bytes": 21326,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "324b7b40986e8994917fa0d774b87c4cea7e4571c5dc32bfdfd99350618a8e4b"
+        },
+        {
+          "manifest": "output/ISO-003B/results_locked_for_manuscript.json",
+          "manifest_sha256": "831623714de7e1374bb695e2c9e7d93a243806e715f3488d9d74c8150a568878",
+          "sha256": "324b7b40986e8994917fa0d774b87c4cea7e4571c5dc32bfdfd99350618a8e4b"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002C/evaluation/results_A/contrast_CI.tsv",
+      "role": "frozen post-holdout development evaluation",
+      "source_path": "work/ISO-002C/evaluation/results_A/contrast_CI.tsv",
+      "source_sha256": "811a116e7cc8ea67ea093a40c7c57a845e2776e23fa355c2b8c698432cb740b3",
+      "release_sha256": "811a116e7cc8ea67ea093a40c7c57a845e2776e23fa355c2b8c698432cb740b3",
+      "bytes": 42419,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "811a116e7cc8ea67ea093a40c7c57a845e2776e23fa355c2b8c698432cb740b3"
+        },
+        {
+          "manifest": "output/ISO-003B/results_locked_for_manuscript.json",
+          "manifest_sha256": "831623714de7e1374bb695e2c9e7d93a243806e715f3488d9d74c8150a568878",
+          "sha256": "811a116e7cc8ea67ea093a40c7c57a845e2776e23fa355c2b8c698432cb740b3"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002C/evaluation/results_A/fold_metrics.tsv",
+      "role": "frozen post-holdout development evaluation",
+      "source_path": "work/ISO-002C/evaluation/results_A/fold_metrics.tsv",
+      "source_sha256": "14e79eacacd344552645d19884e4b364849e1ffc4ddc373e44f4742842fd4a4d",
+      "release_sha256": "14e79eacacd344552645d19884e4b364849e1ffc4ddc373e44f4742842fd4a4d",
+      "bytes": 88526,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "14e79eacacd344552645d19884e4b364849e1ffc4ddc373e44f4742842fd4a4d"
+        },
+        {
+          "manifest": "output/ISO-003B/results_locked_for_manuscript.json",
+          "manifest_sha256": "831623714de7e1374bb695e2c9e7d93a243806e715f3488d9d74c8150a568878",
+          "sha256": "14e79eacacd344552645d19884e4b364849e1ffc4ddc373e44f4742842fd4a4d"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002C/evaluation/results_A/paired_common_support_models.tsv",
+      "role": "frozen post-holdout development evaluation",
+      "source_path": "work/ISO-002C/evaluation/results_A/paired_common_support_models.tsv",
+      "source_sha256": "082d68a9004cafb63ae7fe221a277fa80f4d23ae452886829ef564fa131a02d9",
+      "release_sha256": "082d68a9004cafb63ae7fe221a277fa80f4d23ae452886829ef564fa131a02d9",
+      "bytes": 12998,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "082d68a9004cafb63ae7fe221a277fa80f4d23ae452886829ef564fa131a02d9"
+        },
+        {
+          "manifest": "output/ISO-003B/results_locked_for_manuscript.json",
+          "manifest_sha256": "831623714de7e1374bb695e2c9e7d93a243806e715f3488d9d74c8150a568878",
+          "sha256": "082d68a9004cafb63ae7fe221a277fa80f4d23ae452886829ef564fa131a02d9"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002C/evaluation/results_A/paired_common_support_folds.tsv",
+      "role": "frozen post-holdout development evaluation",
+      "source_path": "work/ISO-002C/evaluation/results_A/paired_common_support_folds.tsv",
+      "source_sha256": "32dd52a9c78bd814560a06a3b8ed66c7cf70c2c2f7d302967692ea78dca552ac",
+      "release_sha256": "32dd52a9c78bd814560a06a3b8ed66c7cf70c2c2f7d302967692ea78dca552ac",
+      "bytes": 56545,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "32dd52a9c78bd814560a06a3b8ed66c7cf70c2c2f7d302967692ea78dca552ac"
+        },
+        {
+          "manifest": "output/ISO-003B/results_locked_for_manuscript.json",
+          "manifest_sha256": "831623714de7e1374bb695e2c9e7d93a243806e715f3488d9d74c8150a568878",
+          "sha256": "32dd52a9c78bd814560a06a3b8ed66c7cf70c2c2f7d302967692ea78dca552ac"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002C/evaluation/results_A/paired_stratified_common_support.tsv",
+      "role": "frozen post-holdout development evaluation",
+      "source_path": "work/ISO-002C/evaluation/results_A/paired_stratified_common_support.tsv",
+      "source_sha256": "a93613e35d54424bb5043af7965876f05ae82f75a7604cf807d747779617c8e5",
+      "release_sha256": "a93613e35d54424bb5043af7965876f05ae82f75a7604cf807d747779617c8e5",
+      "bytes": 294510,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "a93613e35d54424bb5043af7965876f05ae82f75a7604cf807d747779617c8e5"
+        },
+        {
+          "manifest": "output/ISO-003B/results_locked_for_manuscript.json",
+          "manifest_sha256": "831623714de7e1374bb695e2c9e7d93a243806e715f3488d9d74c8150a568878",
+          "sha256": "a93613e35d54424bb5043af7965876f05ae82f75a7604cf807d747779617c8e5"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002C/evaluation/results_A/stratified_metrics.tsv",
+      "role": "frozen post-holdout development evaluation",
+      "source_path": "work/ISO-002C/evaluation/results_A/stratified_metrics.tsv",
+      "source_sha256": "8cf2e85b5d96cd7368b3305c56b906e2db71c3b65304ca62d2ff6b1276939d33",
+      "release_sha256": "8cf2e85b5d96cd7368b3305c56b906e2db71c3b65304ca62d2ff6b1276939d33",
+      "bytes": 542119,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "8cf2e85b5d96cd7368b3305c56b906e2db71c3b65304ca62d2ff6b1276939d33"
+        },
+        {
+          "manifest": "output/ISO-003B/results_locked_for_manuscript.json",
+          "manifest_sha256": "831623714de7e1374bb695e2c9e7d93a243806e715f3488d9d74c8150a568878",
+          "sha256": "8cf2e85b5d96cd7368b3305c56b906e2db71c3b65304ca62d2ff6b1276939d33"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002C/evaluation/results_A/paired_joint_all_45_cells.tsv",
+      "role": "frozen post-holdout development evaluation",
+      "source_path": "work/ISO-002C/evaluation/results_A/paired_joint_all_45_cells.tsv",
+      "source_sha256": "a101234a736ff6d6136babe12ff775a0beb64427890b735e46fdf2795627b2cb",
+      "release_sha256": "a101234a736ff6d6136babe12ff775a0beb64427890b735e46fdf2795627b2cb",
+      "bytes": 33169,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "a101234a736ff6d6136babe12ff775a0beb64427890b735e46fdf2795627b2cb"
+        },
+        {
+          "manifest": "output/ISO-003B/results_locked_for_manuscript.json",
+          "manifest_sha256": "831623714de7e1374bb695e2c9e7d93a243806e715f3488d9d74c8150a568878",
+          "sha256": "a101234a736ff6d6136babe12ff775a0beb64427890b735e46fdf2795627b2cb"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002D/endpoint_extractor/runs/WTC11_once_01/promoter_group_endpoints.tsv.gz",
+      "role": "unlocked WTC11 group targets",
+      "source_path": "work/ISO-002D/endpoint_extractor/runs/WTC11_once_01/promoter_group_endpoints.tsv",
+      "source_sha256": "3e3d2293fdad4b13ce04fd627970d6c8248a34aeb008715929aaba2ce58c2304",
+      "release_sha256": "704903cd6809516797bc83369460e4d8bbc5f4b05d299b799729033d7bd59555",
+      "bytes": 1560342,
+      "transformation": "deterministic gzip wrapper; decompressed content unchanged after listed substitutions",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "3e3d2293fdad4b13ce04fd627970d6c8248a34aeb008715929aaba2ce58c2304"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002D/evaluation_adapter/run/external/evaluation.json.gz",
+      "role": "frozen common10 evaluation",
+      "source_path": "work/ISO-002D/evaluation_adapter/run/external/evaluation.json",
+      "source_sha256": "313b5f6289c80541da503e398710579b4f17dfbd6c9d5a6314c17e1349b88315",
+      "release_sha256": "4e74259de256d3579b5e6f90d6943bc1e7c9c1a562e5c7c4e99baa5a1a80caf8",
+      "bytes": 473868,
+      "transformation": "deterministic gzip wrapper; decompressed content unchanged after listed substitutions",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "313b5f6289c80541da503e398710579b4f17dfbd6c9d5a6314c17e1349b88315"
+        },
+        {
+          "manifest": "output/ISO-003B/results_locked_for_manuscript.json",
+          "manifest_sha256": "831623714de7e1374bb695e2c9e7d93a243806e715f3488d9d74c8150a568878",
+          "sha256": "313b5f6289c80541da503e398710579b4f17dfbd6c9d5a6314c17e1349b88315"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002D/evaluation_adapter/run/external/scientific_numbers.tsv.gz",
+      "role": "frozen common10 evaluation",
+      "source_path": "work/ISO-002D/evaluation_adapter/run/external/scientific_numbers.tsv",
+      "source_sha256": "060dc2b5ccb7915be618e52cd5b6071b63dc545e3f1e14f714e2ebbf76676d3b",
+      "release_sha256": "8595dc7973d4a93d986470c511a0136f456c6635fa52c7905b14c68fb96df13b",
+      "bytes": 640609,
+      "transformation": "deterministic gzip wrapper; decompressed content unchanged after listed substitutions",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "060dc2b5ccb7915be618e52cd5b6071b63dc545e3f1e14f714e2ebbf76676d3b"
+        },
+        {
+          "manifest": "output/ISO-003B/results_locked_for_manuscript.json",
+          "manifest_sha256": "831623714de7e1374bb695e2c9e7d93a243806e715f3488d9d74c8150a568878",
+          "sha256": "060dc2b5ccb7915be618e52cd5b6071b63dc545e3f1e14f714e2ebbf76676d3b"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002D/evaluation_adapter/run/external/adequacy_flags.tsv.gz",
+      "role": "frozen common10 evaluation",
+      "source_path": "work/ISO-002D/evaluation_adapter/run/external/adequacy_flags.tsv",
+      "source_sha256": "392422a511512dc9039ece7380ce9fbbeba13a8650ff9e2a636027ee10dc9d96",
+      "release_sha256": "f5edbf0d51f11f0dba32dfebb6b24f6ebcf957e54918e37aa82eadf68c5ac435",
+      "bytes": 4608,
+      "transformation": "deterministic gzip wrapper; decompressed content unchanged after listed substitutions",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "392422a511512dc9039ece7380ce9fbbeba13a8650ff9e2a636027ee10dc9d96"
+        },
+        {
+          "manifest": "output/ISO-003B/results_locked_for_manuscript.json",
+          "manifest_sha256": "831623714de7e1374bb695e2c9e7d93a243806e715f3488d9d74c8150a568878",
+          "sha256": "392422a511512dc9039ece7380ce9fbbeba13a8650ff9e2a636027ee10dc9d96"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002D/evaluation_adapter/run/development/evaluation.json.gz",
+      "role": "frozen common10 evaluation",
+      "source_path": "work/ISO-002D/evaluation_adapter/run/development/evaluation.json",
+      "source_sha256": "2ef3ada9b6770e859e72829d2e5066b92e7a70a9486dbaabef668c497fa701d4",
+      "release_sha256": "342015da5bf200d5d712ec5ff70df82966ca6c9dac3cee0ffc9e6387655df801",
+      "bytes": 170736,
+      "transformation": "deterministic gzip wrapper; decompressed content unchanged after listed substitutions",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "2ef3ada9b6770e859e72829d2e5066b92e7a70a9486dbaabef668c497fa701d4"
+        },
+        {
+          "manifest": "output/ISO-003B/results_locked_for_manuscript.json",
+          "manifest_sha256": "831623714de7e1374bb695e2c9e7d93a243806e715f3488d9d74c8150a568878",
+          "sha256": "2ef3ada9b6770e859e72829d2e5066b92e7a70a9486dbaabef668c497fa701d4"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002D/evaluation_adapter/run/development/scientific_numbers.tsv.gz",
+      "role": "frozen common10 evaluation",
+      "source_path": "work/ISO-002D/evaluation_adapter/run/development/scientific_numbers.tsv",
+      "source_sha256": "6294da787ef73f314ad95d790bb1b0058fce2730f182ab0b9689b021d0c2a62b",
+      "release_sha256": "33514c1a89ae0637ecdaebaaff3f3b5d28d2c92be9c4adcfca9b19a2f79810b2",
+      "bytes": 189162,
+      "transformation": "deterministic gzip wrapper; decompressed content unchanged after listed substitutions",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "6294da787ef73f314ad95d790bb1b0058fce2730f182ab0b9689b021d0c2a62b"
+        },
+        {
+          "manifest": "output/ISO-003B/results_locked_for_manuscript.json",
+          "manifest_sha256": "831623714de7e1374bb695e2c9e7d93a243806e715f3488d9d74c8150a568878",
+          "sha256": "6294da787ef73f314ad95d790bb1b0058fce2730f182ab0b9689b021d0c2a62b"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002D/evaluation_adapter/run/development/adequacy_flags.tsv.gz",
+      "role": "frozen common10 evaluation",
+      "source_path": "work/ISO-002D/evaluation_adapter/run/development/adequacy_flags.tsv",
+      "source_sha256": "87c7510c2630ed0047b52054fc31ad17a62d07f7f69b65e4ce908f1f904d982e",
+      "release_sha256": "9f13a01262b610571d5a0ebb99b68422a6bbbc08459b83e83fe7c9495cd50386",
+      "bytes": 3638,
+      "transformation": "deterministic gzip wrapper; decompressed content unchanged after listed substitutions",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "87c7510c2630ed0047b52054fc31ad17a62d07f7f69b65e4ce908f1f904d982e"
+        },
+        {
+          "manifest": "output/ISO-003B/results_locked_for_manuscript.json",
+          "manifest_sha256": "831623714de7e1374bb695e2c9e7d93a243806e715f3488d9d74c8150a568878",
+          "sha256": "87c7510c2630ed0047b52054fc31ad17a62d07f7f69b65e4ce908f1f904d982e"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-001A/code/common.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-001A/code/common.py",
+      "source_sha256": "303ae88ba87c02c7f6f1c972f067be79c9109acf609bbffe9e7c2c3d7190d4e0",
+      "release_sha256": "e8f148e5b33751615ec3da195867963fbc8db348f445687de8ed21a8a27eb630",
+      "bytes": 1590,
+      "transformation": "project root made relative; run historical source from repository root",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-001A_freeze_manifest.json",
+          "manifest_sha256": "996651b24bf165bcf76e1ffdc877e3a2da4b4f935f252d96c958d696a1b0bb19",
+          "sha256": "303ae88ba87c02c7f6f1c972f067be79c9109acf609bbffe9e7c2c3d7190d4e0"
+        },
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "303ae88ba87c02c7f6f1c972f067be79c9109acf609bbffe9e7c2c3d7190d4e0"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-001A/code/group_features.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-001A/code/group_features.py",
+      "source_sha256": "2ec1ffae42d7bb73d185ff5cdded6c35b003686b3f9e8faf2aacfdf1c3fe06e8",
+      "release_sha256": "2ec1ffae42d7bb73d185ff5cdded6c35b003686b3f9e8faf2aacfdf1c3fe06e8",
+      "bytes": 1179,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-001A_freeze_manifest.json",
+          "manifest_sha256": "996651b24bf165bcf76e1ffdc877e3a2da4b4f935f252d96c958d696a1b0bb19",
+          "sha256": "2ec1ffae42d7bb73d185ff5cdded6c35b003686b3f9e8faf2aacfdf1c3fe06e8"
+        },
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "2ec1ffae42d7bb73d185ff5cdded6c35b003686b3f9e8faf2aacfdf1c3fe06e8"
+        },
+        {
+          "manifest": "work/ISO-003B/methods_source_bindings.json",
+          "manifest_sha256": "39274549d484fd5d94c851e920a4e02116f0197c5953c0e5f910da10717f00bf",
+          "sha256": "2ec1ffae42d7bb73d185ff5cdded6c35b003686b3f9e8faf2aacfdf1c3fe06e8"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-001A/code/iso000g_model_utils.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "scripts/iso000g_model_utils.py",
+      "source_sha256": "4425ea76097b8b8a4736e142e0531e02170d13c8cbc39a945eab69b5c3f10e57",
+      "release_sha256": "4425ea76097b8b8a4736e142e0531e02170d13c8cbc39a945eab69b5c3f10e57",
+      "bytes": 1735,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-001A_freeze_manifest.json",
+          "manifest_sha256": "996651b24bf165bcf76e1ffdc877e3a2da4b4f935f252d96c958d696a1b0bb19",
+          "sha256": "4425ea76097b8b8a4736e142e0531e02170d13c8cbc39a945eab69b5c3f10e57"
+        },
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "4425ea76097b8b8a4736e142e0531e02170d13c8cbc39a945eab69b5c3f10e57"
+        },
+        {
+          "manifest": "work/ISO-003B/methods_source_bindings.json",
+          "manifest_sha256": "39274549d484fd5d94c851e920a4e02116f0197c5953c0e5f910da10717f00bf",
+          "sha256": "4425ea76097b8b8a4736e142e0531e02170d13c8cbc39a945eab69b5c3f10e57"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-001A/code/minimal_map.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-001A/code/minimal_map.py",
+      "source_sha256": "cef99b3fb8ef3b6323435e5998162f6370f1f875b9400bd44cdd6c80fca99fbf",
+      "release_sha256": "cef99b3fb8ef3b6323435e5998162f6370f1f875b9400bd44cdd6c80fca99fbf",
+      "bytes": 1972,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-001A_freeze_manifest.json",
+          "manifest_sha256": "996651b24bf165bcf76e1ffdc877e3a2da4b4f935f252d96c958d696a1b0bb19",
+          "sha256": "cef99b3fb8ef3b6323435e5998162f6370f1f875b9400bd44cdd6c80fca99fbf"
+        },
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "cef99b3fb8ef3b6323435e5998162f6370f1f875b9400bd44cdd6c80fca99fbf"
+        },
+        {
+          "manifest": "work/ISO-003B/methods_source_bindings.json",
+          "manifest_sha256": "39274549d484fd5d94c851e920a4e02116f0197c5953c0e5f910da10717f00bf",
+          "sha256": "cef99b3fb8ef3b6323435e5998162f6370f1f875b9400bd44cdd6c80fca99fbf"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-001A/code/metrics.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-001A/code/metrics.py",
+      "source_sha256": "f2034dc2738d1187f58dd12cf8baa179729fd0ccb3d77857f1bff1e238e2c7a4",
+      "release_sha256": "f2034dc2738d1187f58dd12cf8baa179729fd0ccb3d77857f1bff1e238e2c7a4",
+      "bytes": 902,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-001A_freeze_manifest.json",
+          "manifest_sha256": "996651b24bf165bcf76e1ffdc877e3a2da4b4f935f252d96c958d696a1b0bb19",
+          "sha256": "f2034dc2738d1187f58dd12cf8baa179729fd0ccb3d77857f1bff1e238e2c7a4"
+        },
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "f2034dc2738d1187f58dd12cf8baa179729fd0ccb3d77857f1bff1e238e2c7a4"
+        },
+        {
+          "manifest": "work/ISO-003B/methods_source_bindings.json",
+          "manifest_sha256": "39274549d484fd5d94c851e920a4e02116f0197c5953c0e5f910da10717f00bf",
+          "sha256": "f2034dc2738d1187f58dd12cf8baa179729fd0ccb3d77857f1bff1e238e2c7a4"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-001A/code/prepare_groups.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-001A/code/prepare_groups.py",
+      "source_sha256": "19f9abff24b2fc85b63d241609e442485abf3930a938444495904404099a8f30",
+      "release_sha256": "19f9abff24b2fc85b63d241609e442485abf3930a938444495904404099a8f30",
+      "bytes": 9790,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-001A_freeze_manifest.json",
+          "manifest_sha256": "996651b24bf165bcf76e1ffdc877e3a2da4b4f935f252d96c958d696a1b0bb19",
+          "sha256": "19f9abff24b2fc85b63d241609e442485abf3930a938444495904404099a8f30"
+        },
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "19f9abff24b2fc85b63d241609e442485abf3930a938444495904404099a8f30"
+        },
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "19f9abff24b2fc85b63d241609e442485abf3930a938444495904404099a8f30"
+        },
+        {
+          "manifest": "work/ISO-003B/methods_source_bindings.json",
+          "manifest_sha256": "39274549d484fd5d94c851e920a4e02116f0197c5953c0e5f910da10717f00bf",
+          "sha256": "19f9abff24b2fc85b63d241609e442485abf3930a938444495904404099a8f30"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-001A/code/real_compare.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-001A/code/real_compare.py",
+      "source_sha256": "b87c0e53a37f4a1e031d75d5a14d380264b8c7430827f470bb2b0b8bf37c7a55",
+      "release_sha256": "b87c0e53a37f4a1e031d75d5a14d380264b8c7430827f470bb2b0b8bf37c7a55",
+      "bytes": 8018,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-001A_freeze_manifest.json",
+          "manifest_sha256": "996651b24bf165bcf76e1ffdc877e3a2da4b4f935f252d96c958d696a1b0bb19",
+          "sha256": "b87c0e53a37f4a1e031d75d5a14d380264b8c7430827f470bb2b0b8bf37c7a55"
+        },
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "b87c0e53a37f4a1e031d75d5a14d380264b8c7430827f470bb2b0b8bf37c7a55"
+        },
+        {
+          "manifest": "work/ISO-003B/methods_source_bindings.json",
+          "manifest_sha256": "39274549d484fd5d94c851e920a4e02116f0197c5953c0e5f910da10717f00bf",
+          "sha256": "b87c0e53a37f4a1e031d75d5a14d380264b8c7430827f470bb2b0b8bf37c7a55"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-001A/code/real_compare_resume_v1.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-001A/code/real_compare_resume_v1.py",
+      "source_sha256": "08d0db88e1a3078a3b768b24a64e7de8edf6a57dad01f113432efca5e3559c67",
+      "release_sha256": "08d0db88e1a3078a3b768b24a64e7de8edf6a57dad01f113432efca5e3559c67",
+      "bytes": 3303,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-001A_freeze_manifest.json",
+          "manifest_sha256": "996651b24bf165bcf76e1ffdc877e3a2da4b4f935f252d96c958d696a1b0bb19",
+          "sha256": "08d0db88e1a3078a3b768b24a64e7de8edf6a57dad01f113432efca5e3559c67"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-001A/code/real_compare_complete_fixed_contract_v2.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-001A/code/real_compare_complete_fixed_contract_v2.py",
+      "source_sha256": "a6a2b17fbbcfd7636d1fa0f0fd3b49bf8ee48b6176a8e4b1676da939699b9b9a",
+      "release_sha256": "a6a2b17fbbcfd7636d1fa0f0fd3b49bf8ee48b6176a8e4b1676da939699b9b9a",
+      "bytes": 3939,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-001A_freeze_manifest.json",
+          "manifest_sha256": "996651b24bf165bcf76e1ffdc877e3a2da4b4f935f252d96c958d696a1b0bb19",
+          "sha256": "a6a2b17fbbcfd7636d1fa0f0fd3b49bf8ee48b6176a8e4b1676da939699b9b9a"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-001A/code/evaluate_comparison.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-001A/code/evaluate_comparison.py",
+      "source_sha256": "5bee9c66cd8a06ab63d667224f8074993769c3551fd3b66ccf99e7e6723f3641",
+      "release_sha256": "5bee9c66cd8a06ab63d667224f8074993769c3551fd3b66ccf99e7e6723f3641",
+      "bytes": 9629,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-001A_freeze_manifest.json",
+          "manifest_sha256": "996651b24bf165bcf76e1ffdc877e3a2da4b4f935f252d96c958d696a1b0bb19",
+          "sha256": "5bee9c66cd8a06ab63d667224f8074993769c3551fd3b66ccf99e7e6723f3641"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-001A/code/bootstrap.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-001A/code/bootstrap.py",
+      "source_sha256": "16e1819dfe66681c2f1c12e552d1e3eb45847fd66e87316941729a3ae63943f3",
+      "release_sha256": "3d9a24139f1c24fb445147e90f8286f6f87457b7b480987bc37ef9c0fa610dc6",
+      "bytes": 4382,
+      "transformation": "project root made relative; run historical source from repository root",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-001A_freeze_manifest.json",
+          "manifest_sha256": "996651b24bf165bcf76e1ffdc877e3a2da4b4f935f252d96c958d696a1b0bb19",
+          "sha256": "16e1819dfe66681c2f1c12e552d1e3eb45847fd66e87316941729a3ae63943f3"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-001A/code/extract_development.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-001A/code/extract_development.py",
+      "source_sha256": "3dd8a3807deb7f1f44c5c1f14317bb30db3d0e1a293256f594f91bc25c840344",
+      "release_sha256": "3dd8a3807deb7f1f44c5c1f14317bb30db3d0e1a293256f594f91bc25c840344",
+      "bytes": 4169,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-001A_freeze_manifest.json",
+          "manifest_sha256": "996651b24bf165bcf76e1ffdc877e3a2da4b4f935f252d96c958d696a1b0bb19",
+          "sha256": "3dd8a3807deb7f1f44c5c1f14317bb30db3d0e1a293256f594f91bc25c840344"
+        },
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "3dd8a3807deb7f1f44c5c1f14317bb30db3d0e1a293256f594f91bc25c840344"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002B/code/common.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-002B/code/common.py",
+      "source_sha256": "f088d7caf0ec4035424056d0d3f8bfc0b6ff1fa233e4219307b16a895e482f05",
+      "release_sha256": "bca19c6e3afe653cd8db48501f997ac9bd7012d468dd0e0ec37ce77dcb2e039d",
+      "bytes": 1599,
+      "transformation": "project root made relative; run historical source from repository root",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "f088d7caf0ec4035424056d0d3f8bfc0b6ff1fa233e4219307b16a895e482f05"
+        },
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "f088d7caf0ec4035424056d0d3f8bfc0b6ff1fa233e4219307b16a895e482f05"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002B/code/group_features.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-002B/code/group_features.py",
+      "source_sha256": "2ec1ffae42d7bb73d185ff5cdded6c35b003686b3f9e8faf2aacfdf1c3fe06e8",
+      "release_sha256": "2ec1ffae42d7bb73d185ff5cdded6c35b003686b3f9e8faf2aacfdf1c3fe06e8",
+      "bytes": 1179,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "2ec1ffae42d7bb73d185ff5cdded6c35b003686b3f9e8faf2aacfdf1c3fe06e8"
+        },
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "2ec1ffae42d7bb73d185ff5cdded6c35b003686b3f9e8faf2aacfdf1c3fe06e8"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002B/code/iso000g_model_utils.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-002B/code/iso000g_model_utils.py",
+      "source_sha256": "4425ea76097b8b8a4736e142e0531e02170d13c8cbc39a945eab69b5c3f10e57",
+      "release_sha256": "4425ea76097b8b8a4736e142e0531e02170d13c8cbc39a945eab69b5c3f10e57",
+      "bytes": 1735,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "4425ea76097b8b8a4736e142e0531e02170d13c8cbc39a945eab69b5c3f10e57"
+        },
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "4425ea76097b8b8a4736e142e0531e02170d13c8cbc39a945eab69b5c3f10e57"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002B/code/minimal_map.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-002B/code/minimal_map.py",
+      "source_sha256": "cef99b3fb8ef3b6323435e5998162f6370f1f875b9400bd44cdd6c80fca99fbf",
+      "release_sha256": "cef99b3fb8ef3b6323435e5998162f6370f1f875b9400bd44cdd6c80fca99fbf",
+      "bytes": 1972,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "cef99b3fb8ef3b6323435e5998162f6370f1f875b9400bd44cdd6c80fca99fbf"
+        },
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "cef99b3fb8ef3b6323435e5998162f6370f1f875b9400bd44cdd6c80fca99fbf"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002B/code/metrics.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-002B/code/metrics.py",
+      "source_sha256": "f2034dc2738d1187f58dd12cf8baa179729fd0ccb3d77857f1bff1e238e2c7a4",
+      "release_sha256": "f2034dc2738d1187f58dd12cf8baa179729fd0ccb3d77857f1bff1e238e2c7a4",
+      "bytes": 902,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "f2034dc2738d1187f58dd12cf8baa179729fd0ccb3d77857f1bff1e238e2c7a4"
+        },
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "f2034dc2738d1187f58dd12cf8baa179729fd0ccb3d77857f1bff1e238e2c7a4"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002B/code/final_train.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-002B/code/final_train.py",
+      "source_sha256": "0571ef5a74c4cc9afb31b37c213d4c5089a246a4a611a9c3311612b59e237b33",
+      "release_sha256": "0571ef5a74c4cc9afb31b37c213d4c5089a246a4a611a9c3311612b59e237b33",
+      "bytes": 7013,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "0571ef5a74c4cc9afb31b37c213d4c5089a246a4a611a9c3311612b59e237b33"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002B/code/final_inference.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-002B/code/final_inference.py",
+      "source_sha256": "ea1ec83d721ddc0f5347ab015c10a848c7ca1a8bd328836ffca0b8a19930a50e",
+      "release_sha256": "ea1ec83d721ddc0f5347ab015c10a848c7ca1a8bd328836ffca0b8a19930a50e",
+      "bytes": 2833,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "ea1ec83d721ddc0f5347ab015c10a848c7ca1a8bd328836ffca0b8a19930a50e"
+        },
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "ea1ec83d721ddc0f5347ab015c10a848c7ca1a8bd328836ffca0b8a19930a50e"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002B/code/final_metrics.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-002B/code/final_metrics.py",
+      "source_sha256": "5b6e678df2b4d0b066b7f6210b016caaaabb02c6ab3b00e6c67e5a6cdd7f392e",
+      "release_sha256": "5b6e678df2b4d0b066b7f6210b016caaaabb02c6ab3b00e6c67e5a6cdd7f392e",
+      "bytes": 6354,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "5b6e678df2b4d0b066b7f6210b016caaaabb02c6ab3b00e6c67e5a6cdd7f392e"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002B/code/rebuild_final_predictions.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-002B/code/rebuild_final_predictions.py",
+      "source_sha256": "7aa28de6cfd32c0ff28b09de86680a7f088dd11269065e76e060515f9e162766",
+      "release_sha256": "7aa28de6cfd32c0ff28b09de86680a7f088dd11269065e76e060515f9e162766",
+      "bytes": 3104,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "7aa28de6cfd32c0ff28b09de86680a7f088dd11269065e76e060515f9e162766"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002B/code/prepare_final_features.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-002B/code/prepare_final_features.py",
+      "source_sha256": "a1521188bdfd5367395fa3c3e43ff87463c65ac011ed9c7fd56be14bb307558c",
+      "release_sha256": "a1521188bdfd5367395fa3c3e43ff87463c65ac011ed9c7fd56be14bb307558c",
+      "bytes": 11597,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "a1521188bdfd5367395fa3c3e43ff87463c65ac011ed9c7fd56be14bb307558c"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002B/code/reference_metadata.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-002B/code/reference_metadata.py",
+      "source_sha256": "349535c592b3ac80f4ba73cfd31d7d44148d04121833d8753b5fad634d851edb",
+      "release_sha256": "90659e43f7ee2c5687950db3f867d48ada810b91100cef3c875bbb33866a9c0e",
+      "bytes": 2074,
+      "transformation": "project root made relative; run historical source from repository root",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "349535c592b3ac80f4ba73cfd31d7d44148d04121833d8753b5fad634d851edb"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002C/code/common.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-002C/code/common.py",
+      "source_sha256": "f4b2cf02df78ef621e4b5ca873b90366340371dc566f5752c907066de3b9864c",
+      "release_sha256": "65ec749ae7f469096369c3aa487f8ebdf07a8460bfe423f8b75ea2011541d2fe",
+      "bytes": 3035,
+      "transformation": "project root made relative; run historical source from repository root",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "f4b2cf02df78ef621e4b5ca873b90366340371dc566f5752c907066de3b9864c"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002C/code/iso000g_model_utils.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-002C/code/iso000g_model_utils.py",
+      "source_sha256": "4425ea76097b8b8a4736e142e0531e02170d13c8cbc39a945eab69b5c3f10e57",
+      "release_sha256": "4425ea76097b8b8a4736e142e0531e02170d13c8cbc39a945eab69b5c3f10e57",
+      "bytes": 1735,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "4425ea76097b8b8a4736e142e0531e02170d13c8cbc39a945eab69b5c3f10e57"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002C/code/minimal_map.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-002C/code/minimal_map.py",
+      "source_sha256": "cef99b3fb8ef3b6323435e5998162f6370f1f875b9400bd44cdd6c80fca99fbf",
+      "release_sha256": "cef99b3fb8ef3b6323435e5998162f6370f1f875b9400bd44cdd6c80fca99fbf",
+      "bytes": 1972,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "cef99b3fb8ef3b6323435e5998162f6370f1f875b9400bd44cdd6c80fca99fbf"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002C/code/metrics.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-002C/code/metrics.py",
+      "source_sha256": "f2034dc2738d1187f58dd12cf8baa179729fd0ccb3d77857f1bff1e238e2c7a4",
+      "release_sha256": "f2034dc2738d1187f58dd12cf8baa179729fd0ccb3d77857f1bff1e238e2c7a4",
+      "bytes": 902,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "f2034dc2738d1187f58dd12cf8baa179729fd0ccb3d77857f1bff1e238e2c7a4"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002C/code/train.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-002C/code/train.py",
+      "source_sha256": "0e946d92559bd7f3cb8d0b5458d0e5e24d7630f1f5fd424e9288abe063d5be8f",
+      "release_sha256": "0e946d92559bd7f3cb8d0b5458d0e5e24d7630f1f5fd424e9288abe063d5be8f",
+      "bytes": 4974,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "0e946d92559bd7f3cb8d0b5458d0e5e24d7630f1f5fd424e9288abe063d5be8f"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002C/code/postprocess.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-002C/code/postprocess.py",
+      "source_sha256": "745eae2fd17ea50d2f9921f2cb1afe3149cae2638ddb0f20fe1f081bcdf3bca6",
+      "release_sha256": "99bcc2080ed01d84fcf720073c70df31bbab71108b0ce1bcfbd312f7b7fe6d97",
+      "bytes": 4115,
+      "transformation": "project root made relative; run historical source from repository root",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "745eae2fd17ea50d2f9921f2cb1afe3149cae2638ddb0f20fe1f081bcdf3bca6"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002C/code/infer_frozen.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-002C/code/infer_frozen.py",
+      "source_sha256": "4098ae9824683b0ec5559802f74121fb84f18fee0c0f1c65555efa33c013b089",
+      "release_sha256": "4098ae9824683b0ec5559802f74121fb84f18fee0c0f1c65555efa33c013b089",
+      "bytes": 2068,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "4098ae9824683b0ec5559802f74121fb84f18fee0c0f1c65555efa33c013b089"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002D/code/common.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-002D/code/common.py",
+      "source_sha256": "04b9713660485663e6c8c9188e77ffa8b2fe21e5cf1cbff6a2d13347ad3fba16",
+      "release_sha256": "709c46938a19b236ff794d13ef8e3db4acd51ee7758906be611d8d5b8a13ac2c",
+      "bytes": 4680,
+      "transformation": "project root made relative; run historical source from repository root",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "04b9713660485663e6c8c9188e77ffa8b2fe21e5cf1cbff6a2d13347ad3fba16"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002D/code/metrics.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-002D/code/metrics.py",
+      "source_sha256": "c8662274dbc87100919becab1f7a55ab90ce10a76c70c540c505cfa76939dde8",
+      "release_sha256": "c8662274dbc87100919becab1f7a55ab90ce10a76c70c540c505cfa76939dde8",
+      "bytes": 1967,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "c8662274dbc87100919becab1f7a55ab90ce10a76c70c540c505cfa76939dde8"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002D/code/train.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-002D/code/train.py",
+      "source_sha256": "0e479be03633c784ec56504946724d9067145820608ba84c4203553f4c1da911",
+      "release_sha256": "0e479be03633c784ec56504946724d9067145820608ba84c4203553f4c1da911",
+      "bytes": 5421,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "0e479be03633c784ec56504946724d9067145820608ba84c4203553f4c1da911"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002D/code/assemble_common10_R1.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-002D/code/assemble_common10_R1.py",
+      "source_sha256": "4939f4526b2232a24b9b19fade067cf59659c5a67845f46f826aca2c734ee97d",
+      "release_sha256": "4939f4526b2232a24b9b19fade067cf59659c5a67845f46f826aca2c734ee97d",
+      "bytes": 9467,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "4939f4526b2232a24b9b19fade067cf59659c5a67845f46f826aca2c734ee97d"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002C/evaluation/evaluate_phase1.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-002C/evaluation/evaluate_phase1.py",
+      "source_sha256": "fb7326c104df1c42c3c899c8445853e79a1f24a27b8099571c93abc6b3da5778",
+      "release_sha256": "b569de7a1b885a279dce25377dc4507e805e286c116947006dbcf52de45353c4",
+      "bytes": 28968,
+      "transformation": "project root made relative; run historical source from repository root",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "fb7326c104df1c42c3c899c8445853e79a1f24a27b8099571c93abc6b3da5778"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002D/evaluation_engine/engine.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-002D/evaluation_engine/engine.py",
+      "source_sha256": "0b82d29d4449199865e3e66167d77ef115ac38587f5c44a82ae928978a378de1",
+      "release_sha256": "0b82d29d4449199865e3e66167d77ef115ac38587f5c44a82ae928978a378de1",
+      "bytes": 17837,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "0b82d29d4449199865e3e66167d77ef115ac38587f5c44a82ae928978a378de1"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002D/evaluation_engine/reference_metrics.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-002D/evaluation_engine/reference_metrics.py",
+      "source_sha256": "1d9d599cddac6b1e8c9dd047675d2862f695ed708b9e905927c07406171e9499",
+      "release_sha256": "1d9d599cddac6b1e8c9dd047675d2862f695ed708b9e905927c07406171e9499",
+      "bytes": 1569,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "1d9d599cddac6b1e8c9dd047675d2862f695ed708b9e905927c07406171e9499"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002D/evaluation_adapter/tables.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-002D/evaluation_adapter/tables.py",
+      "source_sha256": "b3d478dcc223bf224fb752deb4352563c4503049023ff197837550956b0db1c9",
+      "release_sha256": "b3d478dcc223bf224fb752deb4352563c4503049023ff197837550956b0db1c9",
+      "bytes": 8079,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "b3d478dcc223bf224fb752deb4352563c4503049023ff197837550956b0db1c9"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002D/evaluation_adapter/reporting.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-002D/evaluation_adapter/reporting.py",
+      "source_sha256": "e32ae5077f3c5c6eb17c0880ba24215e38824d54a6e19c1219cf3a411def0e91",
+      "release_sha256": "e32ae5077f3c5c6eb17c0880ba24215e38824d54a6e19c1219cf3a411def0e91",
+      "bytes": 15241,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "e32ae5077f3c5c6eb17c0880ba24215e38824d54a6e19c1219cf3a411def0e91"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002D/endpoint_extractor/code/extract_ctss.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-002D/endpoint_extractor/code/extract_ctss.py",
+      "source_sha256": "c0fcebd3a2318160b0853afb452fa8f8e8dd51724076ec4bd983dc89b32c4b4e",
+      "release_sha256": "c85897b8fd4d910f46d0676cd7ed8e099bf27c602faf091a52068d1bec25a098",
+      "bytes": 21933,
+      "transformation": "project root made relative; run historical source from repository root",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "c0fcebd3a2318160b0853afb452fa8f8e8dd51724076ec4bd983dc89b32c4b4e"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002D/neutral/code/measure.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-002D/neutral/code/measure.py",
+      "source_sha256": "86f03414859f06a567cbe3829f733340121ef06f8309de90e4cb0aba42c2ceb5",
+      "release_sha256": "eab11d6b0230646cfc010841d6793a5f5c8baa02639c0b0b08aef86c7701be12",
+      "bytes": 10276,
+      "transformation": "project root made relative; run historical source from repository root",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "86f03414859f06a567cbe3829f733340121ef06f8309de90e4cb0aba42c2ceb5"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002D/structure/code/structure_lib.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-002D/structure/code/structure_lib.py",
+      "source_sha256": "9e22d02596536ec4b28c8bd66cdaaa64cdbc86a0937429f62197c0e151d310a1",
+      "release_sha256": "1af4ffeb7c6c5ba0097e4c9868bd99c73f8d6ab6c2b5bbc56036d88ea141512b",
+      "bytes": 13755,
+      "transformation": "project root made relative; run historical source from repository root",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "9e22d02596536ec4b28c8bd66cdaaa64cdbc86a0937429f62197c0e151d310a1"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002D/structure/code/run_structure.py",
+      "role": "historical implementation; relative-root public copy",
+      "source_path": "work/ISO-002D/structure/code/run_structure.py",
+      "source_sha256": "859c5b92cdb31e56eb4015115fabf47186a81bdf00839ac96ae8e758f37b1a23",
+      "release_sha256": "859c5b92cdb31e56eb4015115fabf47186a81bdf00839ac96ae8e758f37b1a23",
+      "bytes": 14325,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "859c5b92cdb31e56eb4015115fabf47186a81bdf00839ac96ae8e758f37b1a23"
+        }
+      ]
+    },
+    {
+      "path": "contracts/ISO-001A_real_data_comparison_contract.yaml",
+      "role": "scientific protocol; private root removed",
+      "source_path": "contracts/ISO-001A_real_data_comparison_contract.yaml",
+      "source_sha256": "16475560d1fc60f24174c6b1aaab01219efbc4da93c0da94ddbfe200a0bee374",
+      "release_sha256": "5a2454296bf723e6d52a212422351284bd6503406a141b3d4ec2126f932e5ec0",
+      "bytes": 10390,
+      "transformation": "project root made relative; run historical source from repository root; remove private host alias (scientific values unchanged)",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-001A_freeze_manifest.json",
+          "manifest_sha256": "996651b24bf165bcf76e1ffdc877e3a2da4b4f935f252d96c958d696a1b0bb19",
+          "sha256": "16475560d1fc60f24174c6b1aaab01219efbc4da93c0da94ddbfe200a0bee374"
+        },
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "16475560d1fc60f24174c6b1aaab01219efbc4da93c0da94ddbfe200a0bee374"
+        },
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "16475560d1fc60f24174c6b1aaab01219efbc4da93c0da94ddbfe200a0bee374"
+        },
+        {
+          "manifest": "output/ISO-003B/results_locked_for_manuscript.json",
+          "manifest_sha256": "831623714de7e1374bb695e2c9e7d93a243806e715f3488d9d74c8150a568878",
+          "sha256": "16475560d1fc60f24174c6b1aaab01219efbc4da93c0da94ddbfe200a0bee374"
+        }
+      ]
+    },
+    {
+      "path": "contracts/ISO-002B_final_evaluation_protocol.yaml",
+      "role": "scientific protocol; private root removed",
+      "source_path": "contracts/ISO-002B_final_evaluation_protocol.yaml",
+      "source_sha256": "14c726c3c46c63bb8933a0b8317c855cf262f190e33418b1bf97229a2c0e0988",
+      "release_sha256": "14c726c3c46c63bb8933a0b8317c855cf262f190e33418b1bf97229a2c0e0988",
+      "bytes": 10110,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "logs/ISO-002B_checkpoint_manifest.json",
+          "manifest_sha256": "1e02ec1e89e0f8dcaaed623707a3e666b9a8ac74011bd1190428d2e384cdf511",
+          "sha256": "14c726c3c46c63bb8933a0b8317c855cf262f190e33418b1bf97229a2c0e0988"
+        },
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "14c726c3c46c63bb8933a0b8317c855cf262f190e33418b1bf97229a2c0e0988"
+        },
+        {
+          "manifest": "output/ISO-003B/results_locked_for_manuscript.json",
+          "manifest_sha256": "831623714de7e1374bb695e2c9e7d93a243806e715f3488d9d74c8150a568878",
+          "sha256": "14c726c3c46c63bb8933a0b8317c855cf262f190e33418b1bf97229a2c0e0988"
+        }
+      ]
+    },
+    {
+      "path": "contracts/ISO-002C_phase1_comparison_contract.yaml",
+      "role": "scientific protocol; private root removed",
+      "source_path": "contracts/ISO-002C_phase1_comparison_contract.yaml",
+      "source_sha256": "b1c0099629f6fb67d9b620951fabdd6994aead597b93c520d9ffb900eae5829d",
+      "release_sha256": "ffbca224b9306a2a88bd55738315ce83f343308f62d608ed82033dec806590e0",
+      "bytes": 12273,
+      "transformation": "project root made relative; run historical source from repository root; remove private host alias (scientific values unchanged)",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002C/manifests/release_frozen.json",
+          "manifest_sha256": "1fc31d77bedd72ae7904b7d368babd2a921430417ede27e9ce0e09e4aeb1f036",
+          "sha256": "b1c0099629f6fb67d9b620951fabdd6994aead597b93c520d9ffb900eae5829d"
+        },
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "b1c0099629f6fb67d9b620951fabdd6994aead597b93c520d9ffb900eae5829d"
+        },
+        {
+          "manifest": "output/ISO-003B/results_locked_for_manuscript.json",
+          "manifest_sha256": "831623714de7e1374bb695e2c9e7d93a243806e715f3488d9d74c8150a568878",
+          "sha256": "b1c0099629f6fb67d9b620951fabdd6994aead597b93c520d9ffb900eae5829d"
+        }
+      ]
+    },
+    {
+      "path": "contracts/ISO-002D_common10_computation_contract.json",
+      "role": "scientific protocol; private root removed",
+      "source_path": "contracts/ISO-002D_common10_computation_contract.json",
+      "source_sha256": "326c465529fa52714f67670ca727a756614bf0aa12784a99cdf583a8fa26fe5c",
+      "release_sha256": "326c465529fa52714f67670ca727a756614bf0aa12784a99cdf583a8fa26fe5c",
+      "bytes": 17324,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "326c465529fa52714f67670ca727a756614bf0aa12784a99cdf583a8fa26fe5c"
+        },
+        {
+          "manifest": "output/ISO-003B/results_locked_for_manuscript.json",
+          "manifest_sha256": "831623714de7e1374bb695e2c9e7d93a243806e715f3488d9d74c8150a568878",
+          "sha256": "326c465529fa52714f67670ca727a756614bf0aa12784a99cdf583a8fa26fe5c"
+        }
+      ]
+    },
+    {
+      "path": "work/ISO-002D/endpoint/endpoint_contract.json",
+      "role": "scientific protocol; private root removed",
+      "source_path": "work/ISO-002D/endpoint/endpoint_contract.json",
+      "source_sha256": "83561a30b925227efabaf9dbc9eb3ae4c0fd7baee810229f2b72782f1a90b5f9",
+      "release_sha256": "83561a30b925227efabaf9dbc9eb3ae4c0fd7baee810229f2b72782f1a90b5f9",
+      "bytes": 7055,
+      "transformation": "byte-identical",
+      "bindings": [
+        {
+          "manifest": "output/ISO-002D/manifests/release_frozen.json",
+          "manifest_sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0",
+          "sha256": "83561a30b925227efabaf9dbc9eb3ae4c0fd7baee810229f2b72782f1a90b5f9"
+        }
+      ]
+    }
+  ],
+  "scientific_scope": "processed group-level replay of existing results; no new fitting/discovery/bootstrap",
+  "limitations": [
+    "Historical raw-to-group reconstruction not executed or packaged as an end-to-end command",
+    "Historical protocol/hash guards in work/ are not adapted into a retraining workflow",
+    "Licenses and release approval controlled by the corresponding project owner"
+  ]
+}

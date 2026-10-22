@@ -1,0 +1,56 @@
+{
+  "scope": "Metadata only; upstream files are not redistributed. Archived hashes identify the data used; no current download or third-party license claim.",
+  "WTC11_archive": {
+    "url": "https://cgl.gi.ucsc.edu/data/LRGASP/submissions/MortazaviLab.tar.gz",
+    "bytes": 2136133456,
+    "sha256": "15b8cfcd3820fab01f6fe5af3cbd8841b55a834fead8d6bad6a95d8b7f6bb0f7",
+    "member": "MortazaviLab/Challenge1/iso_detect_ref_talon_lapa_long/human_WTC11_cDNA_PacBio/models.gtf.gz",
+    "member_sha256": "66b12bb0e58285716c3b19d2437206043bd2fa8e564b43c550d71a69cdfc96d7",
+    "member_bytes": 17428173,
+    "historical_execution_commit": "NOT_RETROSPECTIVELY_BOUND; source-level audit is not an exact archival run receipt",
+    "declared_generator_versions": {
+      "TALON": "4.0.0",
+      "LAPA": "0.0.2"
+    }
+  },
+  "WTC11_CTSS": [
+    {
+      "accession": "GSM5625727",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5625nnn/GSM5625727/suppl/GSM5625727_WTC11-1_rep1.ctss.bed.gz",
+      "bytes": 45704196,
+      "sha256": "ef462ee0545e5d41a8963bccbcee1eb8a2837bdb8fd72aed4dec896d038d30eb"
+    },
+    {
+      "accession": "GSM5625728",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5625nnn/GSM5625728/suppl/GSM5625728_WTC11-1_rep2.ctss.bed.gz",
+      "bytes": 40892110,
+      "sha256": "0dd19ea3f1f2c5e40040bff53d03a24ba9b4a7fe6dd2cafdbf22cae3136ee50d"
+    },
+    {
+      "accession": "GSM5625729",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5625nnn/GSM5625729/suppl/GSM5625729_WTC11-1_rep3.ctss.bed.gz",
+      "bytes": 44537521,
+      "sha256": "5b093ecdb770e19f810757b7cbc11ef41c3c00fcb4d1f67ca151d5384bbcf04e"
+    },
+    {
+      "accession": "GSM5625730",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5625nnn/GSM5625730/suppl/GSM5625730_WTC11-3_rep1.ctss.bed.gz",
+      "bytes": 50143720,
+      "sha256": "17544d193bffbe5d3340f55377ae3be2e9ce71043a9898ea72ac8415d90a3243"
+    }
+  ],
+  "source_records": [
+    {
+      "path": "work/ISO-002C-R1/receipts/archive_acquisition.json",
+      "sha256": "f8cd2a80b0807d808d2f51eb8f8cfb0639e14702fb7010a54e9c7bdc1bbc10e1"
+    },
+    {
+      "path": "work/ISO-002D/receipts/CTSS_download_manifest.json",
+      "sha256": "570fe48c0b2d6e29bf9012190724ac50b049e66ec24dfc61e02f1b6773a8f405"
+    },
+    {
+      "path": "output/ISO-002D/manifests/release_frozen.json",
+      "sha256": "acc15d2cfa894fed91a7cf124e6bf6454149f860f4ede8b32b9ef8518e4a75c0"
+    }
+  ]
+}

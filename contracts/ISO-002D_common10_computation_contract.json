@@ -1,0 +1,536 @@
+{
+  "stage": "ISO-002D",
+  "status": "FROZEN_BEFORE_NEW_REAL_FITS_AND_EXTERNAL_OUTCOMES",
+  "authority": "Current user: continue and finish the already authorized bounded strengthening; no enlargement of models/data/budget",
+  "unit": "one promoter group / one binary target",
+  "input_gate_status_required": "PASS",
+  "features": [
+    "LR_junction_R1",
+    "LR_junction_fraction_R1",
+    "LR_junction_R2",
+    "LR_junction_fraction_R2",
+    "annotation",
+    "resolution_candidate_count",
+    "resolution_TSS_count",
+    "resolution_window",
+    "resolution_monoexon",
+    "status_junction_NOT_APPLICABLE"
+  ],
+  "seed": 20260903,
+  "training": {
+    "physical_development_export_rows": 46408,
+    "eligible_groups": 30487,
+    "outer_folds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "outer_rule": "frozen inner_fold; purge dependency components touching validation; no group/candidate/gene/block leakage across training/validation",
+    "inner_rule": "same two-way component hash SHA256(component|ISO001A_INNER|20260903) first8 bytes /2**64 >=0.5",
+    "source_contract": "contracts/ISO-002C_phase1_comparison_contract.yaml",
+    "source_contract_sha256": "b1c0099629f6fb67d9b620951fabdd6994aead597b93c520d9ffb900eae5829d",
+    "models": "exact RF14 grid18 renamed RF10, exact EN14 grid20 renamed EN10, no parameter change",
+    "inner_fits_max": 380,
+    "outer_refit_attempts_max": 10,
+    "preprocess": "train-only median SimpleImputer(add_indicator=True,keep_empty_features=True) then RobustScaler",
+    "selection": "highest mean two-inner-fold enrichment among zero convergence-warning configs; exact ties original grid order; only one selected outer refit",
+    "no_new_seed_or_range": true,
+    "no_full_development_refit": true,
+    "no_old_final_access": true
+  },
+  "inference": {
+    "models": [
+      "RF10",
+      "EN10"
+    ],
+    "deployment": "arithmetic mean of all five accepted fold-specific positive-class probabilities per family",
+    "requires_all_ten_models_accepted": true,
+    "dropping_failed_folds": false,
+    "external_preprocessing_fit": false,
+    "external_label_tuning": false,
+    "independent_replay": "all Estimator and preprocessing fit methods disabled; exact group-ID join; per-fold and ensemble scores independently reproduced; no train-label reads",
+    "probability_interpretation": "uncalibrated transport of a HepG2 2/3 promoter-support predictor to WTC11 2/2 support; not absolute functional probabilities"
+  },
+  "methods": [
+    "RF10",
+    "EN10",
+    "ANNOTATION_ONLY",
+    "JUNCTION_MEDIAN_SUPPORT",
+    "WINDOW_OPPORTUNITY_ONLY"
+  ],
+  "contrasts": [
+    [
+      "RF10",
+      "EN10"
+    ],
+    [
+      "RF10",
+      "ANNOTATION_ONLY"
+    ],
+    [
+      "RF10",
+      "JUNCTION_MEDIAN_SUPPORT"
+    ],
+    [
+      "RF10",
+      "WINDOW_OPPORTUNITY_ONLY"
+    ],
+    [
+      "EN10",
+      "ANNOTATION_ONLY"
+    ],
+    [
+      "EN10",
+      "JUNCTION_MEDIAN_SUPPORT"
+    ],
+    [
+      "EN10",
+      "WINDOW_OPPORTUNITY_ONLY"
+    ]
+  ],
+  "diagnostics": {
+    "ANNOTATION_ONLY": "fixed B2 candidate priority mean /2",
+    "JUNCTION_MEDIAN_SUPPORT": "mean of two log1p(group distinct-junction median support) values; monoexon-only NA, not lowest score",
+    "WINDOW_OPPORTUNITY_ONLY": "log1p(exact-member +/-50 interval union bp)"
+  },
+  "statistics": {
+    "primary": "pooled top-decile enrichment = selected positive fraction / eligible positive fraction",
+    "ties": "include all exact boundary ties and report actual coverage; do not silently force 10%",
+    "eligibility": "one frozen primary assay eligibility mask shared across methods and technical/5bp endpoints",
+    "scoring_support": "per-method coverage on that common eligible universe; each contrast uses same pairwise eligible-and-both-finite groups",
+    "main_RF_EN_mono": "Do not remove mono-only groups from RF10-EN10 because JUNCTION diagnostic is inapplicable. Different diagnostic common-support populations identified explicitly.",
+    "bootstrap": {
+      "draws": 2000,
+      "seed": 20260903,
+      "unit": "frozen dependence component; group multiplicities retained",
+      "same_draws_across_methods_and_endpoints": true
+    },
+    "confidence_intervals": {
+      "primary_7_contrasts": "nominal95% and Bonferroni-family99.28571428571429% paired percentile intervals for seven pooled primary enrichment contrasts per dataset",
+      "families": "development and WTC11 separate; no overall across-dataset FWER guarantee",
+      "secondary": "AUC, foldwise, coverage5/20%, technical pairs and5bp endpoints only descriptive95%",
+      "finite_bootstrap": "report number valid/undefined draws, tail order-statistics and Monte Carlo granularity; no exact bootstrap-FWER guarantee or equivalence-from-nonsignificance"
+    },
+    "coverage_levels": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "metrics": [
+      "enrichment",
+      "AUC",
+      "positive_fraction_top",
+      "actual_selection_coverage",
+      "scoring_coverage",
+      "prevalence",
+      "enrichment_ceiling",
+      "Brier_supervised_only",
+      "log_loss_supervised_only"
+    ],
+    "undefined": "binary targets validated; zero positives=>enrichment undefined but zero PPV/coverage/threshold remain defined; single class=>AUC undefined; no flipping",
+    "development": "pooled and each frozen outer fold; explicitly POST_HOC_AFTER_HISTORICAL_FINAL_EXPOSURE_DEVELOPMENT_ONLY",
+    "external": "PRESPECIFIED_NEW_COMMON10_TRANSFER_UNDER_CELL_GENERATOR_ALIGNER_SHIFTS"
+  },
+  "strata": {
+    "annotation_score": [
+      "0",
+      "(0,1)",
+      "1"
+    ],
+    "candidate_count": [
+      "1",
+      "2-4",
+      ">=5"
+    ],
+    "window_bp": [
+      "101",
+      "102-125",
+      ">125"
+    ],
+    "monoexon_fraction": [
+      "none",
+      "mixed",
+      "all"
+    ],
+    "junction_support_sum": [
+      "0",
+      "(0,5)",
+      "[5,20)",
+      "[20,100)",
+      ">=100",
+      "NOT_APPLICABLE"
+    ],
+    "notes": "Descriptive only; annotation strata are fixed annotation-score classes, not automatic known-gene/novel-gene labels; junction support is not E1 read union.",
+    "adequacy_reporting": {
+      "groups": 200,
+      "positives": 20,
+      "negatives": 20,
+      "components": 20,
+      "no_hidden_stratum_deletion": true
+    }
+  },
+  "external_endpoint_contract": "work/ISO-002D/endpoint/endpoint_contract.json",
+  "external_endpoint_contract_sha256": "83561a30b925227efabaf9dbc9eb3ae4c0fd7baee810229f2b72782f1a90b5f9",
+  "unlock_order": [
+    "P1 accepted complete measured input",
+    "computation freeze",
+    "development-only fits and accepted model freeze",
+    "all external predictions freeze",
+    "independent fit-disabled replay",
+    "independent exact4-CTSS download authorization",
+    "full checksum/format-bound extraction authorization",
+    "single predefined evaluation",
+    "freeze all positive/negative results and resource/repair evidence"
+  ],
+  "interpretation": [
+    "No original algorithm STOP reversal",
+    "Not original RF14/RF71 external validation",
+    "Not pure cell-type effect or new-gene generalization",
+    "No functional/protein validation",
+    "HepG2 2/3 and WTC11 2/2 absolute enrichment not treated as same-scale performance",
+    "No Q1 acceptance probability or new-winner requirement"
+  ],
+  "termination": {
+    "completion": "complete bounded external comparison including negative results and exact limitations; not journal submission-ready",
+    "technical_failure": "stop at failed gate, preserve artifacts and labels exposure status; no automatic repair beyond existing1-workday cap",
+    "no_informative_external_endpoint": "report saturation/undefined/low-adequacy and stop expansion, not dataset switching"
+  },
+  "forbidden": [
+    "Davies/A375/global/exposure outcomes",
+    "old final re-evaluation",
+    "new model families",
+    "MAP revival",
+    "new datasets/cell lines",
+    "seven-layer rebuild",
+    "SQANTI3 ML",
+    "manuscript writing or submission",
+    "budget reset"
+  ],
+  "created_utc": "2026-09-09T23:29:10.812784+00:00",
+  "input_gate_status": "PASS",
+  "blueprint_sha256": "dc9f9a7e527e554c4c8c207ee2fce2fea19a5f2cbc97ccf213e17d05c1e10093",
+  "scope_sha256": "360b541a032319be77829b8483b68290d4d47e6340c12ba6ed470442d8bf2289",
+  "operational_recovery_manifest_sha256": "1141f6822f1b11b96ece126e27ca9409d03c3ef334c6e220d63fbc169f86acfd",
+  "P1_acceptance_sha256": "55ae6eeb5cd8b69e4840705a337f612cee49dfc189d2f37546d40ff5a834f32f",
+  "asset_registry_sha256": "8efa6b4fe7c34c560929834e4118e1eec7d09794eefab780a2f9c42a96a981ab",
+  "models": {
+    "RF10": {
+      "grid": [
+        {
+          "n_estimators": 300,
+          "max_depth": 6,
+          "min_samples_leaf": 10,
+          "max_features": "sqrt"
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": 6,
+          "min_samples_leaf": 10,
+          "max_features": 0.5
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": 6,
+          "min_samples_leaf": 50,
+          "max_features": "sqrt"
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": 6,
+          "min_samples_leaf": 50,
+          "max_features": 0.5
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": 6,
+          "min_samples_leaf": 200,
+          "max_features": "sqrt"
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": 6,
+          "min_samples_leaf": 200,
+          "max_features": 0.5
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": 12,
+          "min_samples_leaf": 10,
+          "max_features": "sqrt"
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": 12,
+          "min_samples_leaf": 10,
+          "max_features": 0.5
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": 12,
+          "min_samples_leaf": 50,
+          "max_features": "sqrt"
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": 12,
+          "min_samples_leaf": 50,
+          "max_features": 0.5
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": 12,
+          "min_samples_leaf": 200,
+          "max_features": "sqrt"
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": 12,
+          "min_samples_leaf": 200,
+          "max_features": 0.5
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": null,
+          "min_samples_leaf": 10,
+          "max_features": "sqrt"
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": null,
+          "min_samples_leaf": 10,
+          "max_features": 0.5
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": null,
+          "min_samples_leaf": 50,
+          "max_features": "sqrt"
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": null,
+          "min_samples_leaf": 50,
+          "max_features": 0.5
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": null,
+          "min_samples_leaf": 200,
+          "max_features": "sqrt"
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": null,
+          "min_samples_leaf": 200,
+          "max_features": 0.5
+        }
+      ],
+      "random_state": 20260903,
+      "n_jobs": 1,
+      "class_weight": null
+    },
+    "EN10": {
+      "grid": [
+        {
+          "C": 0.01,
+          "l1_ratio": 0.0
+        },
+        {
+          "C": 0.01,
+          "l1_ratio": 0.25
+        },
+        {
+          "C": 0.01,
+          "l1_ratio": 0.5
+        },
+        {
+          "C": 0.01,
+          "l1_ratio": 0.75
+        },
+        {
+          "C": 0.01,
+          "l1_ratio": 1.0
+        },
+        {
+          "C": 0.1,
+          "l1_ratio": 0.0
+        },
+        {
+          "C": 0.1,
+          "l1_ratio": 0.25
+        },
+        {
+          "C": 0.1,
+          "l1_ratio": 0.5
+        },
+        {
+          "C": 0.1,
+          "l1_ratio": 0.75
+        },
+        {
+          "C": 0.1,
+          "l1_ratio": 1.0
+        },
+        {
+          "C": 1.0,
+          "l1_ratio": 0.0
+        },
+        {
+          "C": 1.0,
+          "l1_ratio": 0.25
+        },
+        {
+          "C": 1.0,
+          "l1_ratio": 0.5
+        },
+        {
+          "C": 1.0,
+          "l1_ratio": 0.75
+        },
+        {
+          "C": 1.0,
+          "l1_ratio": 1.0
+        },
+        {
+          "C": 10.0,
+          "l1_ratio": 0.0
+        },
+        {
+          "C": 10.0,
+          "l1_ratio": 0.25
+        },
+        {
+          "C": 10.0,
+          "l1_ratio": 0.5
+        },
+        {
+          "C": 10.0,
+          "l1_ratio": 0.75
+        },
+        {
+          "C": 10.0,
+          "l1_ratio": 1.0
+        }
+      ],
+      "solver": "saga",
+      "penalty": "elasticnet",
+      "max_iter": 5000,
+      "tol": 0.0001,
+      "random_state": 20260903,
+      "n_jobs": 1,
+      "class_weight": null
+    }
+  },
+  "training_input_sha256": {
+    "work/ISO-001A/output/data/development_E4_v1.parquet": "ef9bd0b3fcb6a9fca6032d06849162e696aa0ad2651fe6d53113783e4de958f0",
+    "work/ISO-001A/output/data/group_metadata_label_blind.parquet": "2df9945cf0f330b17de9787c72881345d5ede921711f64884e2314269515c346",
+    "work/ISO-001A/output/data/group_evidence_label_blind.parquet": "22f50ae29b489329e8638c1e6e351539c48e53c6413a62fc406312a83106dbb3",
+    "work/ISO-001A/output/data/group_baselines_label_blind.parquet": "068baffe90aa15ec0699e6106ca1de0d536766c8f9bb1a5a0baba2c97519e9a1"
+  },
+  "external_input_files": [
+    {
+      "path": "work/ISO-002D/receipts/operational_recovery_R1_frozen.json",
+      "bytes": 15083,
+      "sha256": "1141f6822f1b11b96ece126e27ca9409d03c3ef334c6e220d63fbc169f86acfd"
+    },
+    {
+      "path": "work/ISO-002D/receipts/assembly_complete.json",
+      "bytes": 2901,
+      "sha256": "24effb55a1cfeb1dfc3c6e1344620b684a553d121ac2df6f7cded1b8934bef56"
+    },
+    {
+      "path": "work/ISO-002D/receipts/assembly_input_code_freeze.json",
+      "bytes": 20542,
+      "sha256": "58291ad6aecfb93b669f2bbe213b3f4571f6f000d3dd66983483e6da16f8c78f"
+    },
+    {
+      "path": "work/ISO-002D/receipts/P1_operational_acceptance_requirement_R1.json",
+      "bytes": 2203,
+      "sha256": "6ff2af7fb4e39ac7da4364c5de9e90832118888ae64f221268b15c5ca61ed191"
+    },
+    {
+      "path": "work/ISO-002D/repair_r1/runtime/guard_complete.json",
+      "bytes": 785,
+      "sha256": "a09c6ea7f11e4c4abe67dd29d0695d45ff3dd9c7480134534c8facf585d5dac5"
+    },
+    {
+      "path": "work/ISO-002D/repair_r1/runtime/guard_freeze.json",
+      "bytes": 1276,
+      "sha256": "653a6b588b39c74cf8b877516fd39ba2c661ccf88a5f7395bf57641270c3ec97"
+    },
+    {
+      "path": "work/ISO-002D/structure/branch_frozen.json",
+      "bytes": 177623,
+      "sha256": "666ad1d11491bcfe80595d851ca66bf431927a9abffbba0db4253511524283bd"
+    },
+    {
+      "path": "work/ISO-002D/structure/branch_frozen_check.json",
+      "bytes": 259867,
+      "sha256": "95c27706ce17f447ff0b41d6e15e609eb813a141c3b372f427daf861eb706b18"
+    },
+    {
+      "path": "work/ISO-002D/structure/branch_closure_receipt.json",
+      "bytes": 1955,
+      "sha256": "3a33a2ba72c3ffe8ad82f5ac2a77967a19dbed9e27500c3e7290503e1456423b"
+    },
+    {
+      "path": "work/ISO-002D/neutral/receipts/branch_closed_inventory.json",
+      "bytes": 44548,
+      "sha256": "a8f83e9fb0d4a8fd8114636e8806a8737db72c14835d12d4563fb3c04b1f8134"
+    },
+    {
+      "path": "work/ISO-002D/neutral/receipts/branch_inventory_check.json",
+      "bytes": 257,
+      "sha256": "750ba2f9c19f63f6af6c3f3f3c097db8d781a9ccadf87c7f88e740e91f96671a"
+    },
+    {
+      "path": "work/ISO-002D/independence/candidate_independence_review.json",
+      "bytes": 4205,
+      "sha256": "6357e2d03e07c2be1c3b5d10660892eaf99d79dc44bb81ead0ca8a9af4d6d2b2"
+    },
+    {
+      "path": "work/ISO-002D/independence/peer_adjudication.json",
+      "bytes": 1891,
+      "sha256": "0248a342150648a2a4697560eef3aa8a97847b70397cbf691dddbc4d152f73fa"
+    },
+    {
+      "path": "work/ISO-002D/endpoint/endpoint_contract.json",
+      "bytes": 7055,
+      "sha256": "83561a30b925227efabaf9dbc9eb3ae4c0fd7baee810229f2b72782f1a90b5f9"
+    },
+    {
+      "path": "work/ISO-002D/code/audit_accept_P1_R1.py",
+      "bytes": 8483,
+      "sha256": "0535a3777640543d188d50e433c68ec409ce08d87f94badd4987ff44cb5ec77c"
+    },
+    {
+      "path": "output/ISO-002D/data/WTC11_common10.parquet",
+      "bytes": 718039,
+      "sha256": "2255c40dff3c91471cee91f82d5952e78b9baf6a6be16f5b728b3d5273b66c33"
+    },
+    {
+      "path": "output/ISO-002D/data/WTC11_group_evidence_label_blind.parquet",
+      "bytes": 664666,
+      "sha256": "909f4388e3ec60f2f560f425dfbfb99f33e71157020902f9e6ed1a4911c7a912"
+    },
+    {
+      "path": "output/ISO-002D/data/WTC11_group_metadata_label_blind.parquet",
+      "bytes": 1438311,
+      "sha256": "d421c07159a6e6787b8a7a0d02d398652fc19af03dec283dd5178d3cd3c9810d"
+    },
+    {
+      "path": "output/ISO-002D/data/WTC11_dependency_components.parquet",
+      "bytes": 626625,
+      "sha256": "c74dfc201e8b6e3487b29f82a2fe35594759390b59eb50166fcc8e2ac3ce5e78"
+    },
+    {
+      "path": "output/ISO-002D/data/WTC11_simple_diagnostics.parquet",
+      "bytes": 721558,
+      "sha256": "40d2703a0496142a9d0a94cfcd8ccee98fb4111c9e5a3dfad14e342bb609863b"
+    }
+  ],
+  "real_model_fits_completed_at_freeze": 0,
+  "external_outcome_bodies_read_at_freeze": 0
+}

@@ -1,0 +1,165 @@
+{
+  "stage": "ISO-002B_CBC_COMPARATIVE_STUDY_AND_SUBMISSION_CLOSURE",
+  "version": "1.0",
+  "state": "FROZEN_BEFORE_FINAL_TRAINING_AND_FINAL_LABELS",
+  "created_utc": "2026-09-07T15:20:03.949344+00:00",
+  "authorization": "User ISO-002B_CBC_Submission_Closure_Codex.txt plus direct message; original ISO-001A STOP retained; no new model architecture.",
+  "target_journal": "Computational Biology and Chemistry",
+  "article_type": "Full-length original research article",
+  "publication_route": "Subscription; no automatic submission/payment/upload",
+  "evidence_scope": "HepG2 CAGE promoter-support prioritization; not complete-isoform function or external biological validation",
+  "authority": {
+    "ISO_001A_freeze_sha256": "996651b24bf165bcf76e1ffdc877e3a2da4b4f935f252d96c958d696a1b0bb19",
+    "ISO_001A_protocol_sha256": "16475560d1fc60f24174c6b1aaab01219efbc4da93c0da94ddbfe200a0bee374",
+    "input_register_sha256": "f91a4a944c366fbf50c9d0677a594adc0a090c036902967baa51287ea50a1803",
+    "request_sha256": "d9efa04d15b605d78043eb8619d87e5fc00574ca014523ecc4e76f628f524a74",
+    "ISO_002A_execution_found": false
+  },
+  "budgets": {
+    "new_workdays_max": 10,
+    "technical_repair_workdays_max": 1,
+    "accounting_hours_per_workday": 8,
+    "scientific_compute_expected_hours": 2,
+    "analysis_threads_per_process_group_max": 8,
+    "no_stage_budget_reset": true
+  },
+  "units": {
+    "primary": "one promoter group; one Bernoulli target per training observation",
+    "candidate_members": "share group support prediction; no member functional ranking",
+    "independent_bootstrap_unit": "inherited merged gene/block/read/junction/window dependency component"
+  },
+  "membership": {
+    "development_frozen": 46408,
+    "development_training_eligible": 30487,
+    "final_frozen": 11602,
+    "final_eligible_label_blind": 10464,
+    "final_eligible_components": 773,
+    "candidate_holdout_map_unchanged": true,
+    "global_external_and_850_genes_and_11_exposures": "still excluded and locked"
+  },
+  "eligibility": {
+    "rules": [
+      "ISO-000F assay_eligibility true",
+      "Exclude all ALL_COMPATIBLE_CTSS_PROMOTER_GROUP_SHARED metadata groups as in ISO-001A, including entire 5912 set containing original 5279 ambiguous groups",
+      "Train only ISO-001A eligible development; no reinstatement of development groups touching any final dependency",
+      "Final group must not share inherited merged dependency component with used training groups"
+    ],
+    "directional_dependency_semantics": "touches_final_dependency excludes development rows, not each final row merely for belonging to final. Final evaluation checks dependence against ACTUALLY USED legal development; no mask broadening relative to assay/ambiguity rules.",
+    "no_candidate_split_holdout_or_dependency_graph_change": true,
+    "derived_development_features": "exact prior table value and dtype identity required"
+  },
+  "endpoint": {
+    "primary": "top-decile enrichment ratio: top selected group positive rate / same evaluated mother-set positive rate",
+    "CAGE_event": "same strand, any exact-member TSS +/-50bp inclusive, at least 2 of 3 replicate detections; frozen ISO-000F event unchanged",
+    "negative_meaning": "did not meet reproducible assay support, not absence of transcription or function",
+    "exact_ties": "include all at weighted cutoff; no ID tie-breaking; disclose actual top coverage and scoring coverage",
+    "cohort_ceiling": "1 / current analysis-set prevalence, independently recalculated for final/common/partial sets"
+  },
+  "inference": {
+    "single_rule": "one final grouped inner CV selection/refit on legal development; no outer-model ensemble selection and no post-final alternative",
+    "reason": "ISO-001A has nested OOF models, not a frozen final deployment model",
+    "inner_folds": 2,
+    "inner_assignment": "SHA256(dependency_component_id|ISO001A_INNER|20260903) >= 0.5",
+    "seed": 20260903,
+    "preprocessing": "training-only median imputation plus missing indicators and RobustScaler; NOT_APPLICABLE status retained; no fitting on final",
+    "grid": "original EN20 and RF18, unchanged order; choose largest mean inner enrichment among configurations with no convergence warnings; exact selection ties resolved by original grid order",
+    "EN": "same saga elasticnet max_iter5000; at most one selected full-development refit; any warning -> unavailable all final EN scores, preserve failure model/receipt. No fallback configuration or iteration increase. Historical fourth-fold 6264 missing EN scores retained.",
+    "RF": "same original 300-tree grid with depths6/12/None, leaves10/50/200, max_features sqrt/0.5; no class weighting",
+    "ISOCRED_MAP": "identical frozen hierarchical logistic MAP, one group likelihood, fixed priors and L-BFGS-B; new component effect integrated with fixed 15-node Gauss-Hermite prior; no test-label latent fit, posterior calibration claim or functional probability",
+    "SOURCE_AWARE_READ_UNION": "same read log-mean / junction log-mean / B2 training ECDF; fixed source aggregation; READ_UNION retained as strong read comparator"
+  },
+  "comparators": {
+    "primary_common_set": [
+      "B0",
+      "B2",
+      "SOURCE_AWARE",
+      "READ_UNION",
+      "RANDOM_FOREST",
+      "ISOCRED_MAP"
+    ],
+    "secondary_adapted": [
+      "ELASTIC_NET if accepted",
+      "PSQAN_STYLE",
+      "SQANTI3_RULE"
+    ],
+    "TRIFID": "not run; no novel minimum imputation",
+    "information_budget": "RF uses same original 57 group-core columns plus same 14 minimal features available to MAP; fixed scores did not use E4 training; SQANTI3 rules also use existing sequence QC; architecture not isolated by fixed-vs-supervised comparison",
+    "PSQAN_SQANTI": "preserve adapted names and all-member score eligibility; exact ties; no full-pipeline superiority claim",
+    "caller_ablations": "reuse development source-subset models as descriptive sensitivities, not caller functional prediction accuracy"
+  },
+  "evaluation": {
+    "primary_mother_set": "eligible final groups scorable by all six main methods; mask frozen with predictions before labels",
+    "primary_contrasts": [
+      "ISOCRED_MAP - RANDOM_FOREST",
+      "RANDOM_FOREST - READ_UNION"
+    ],
+    "bootstrap": {
+      "draws": 2000,
+      "seed": 20260903,
+      "paired": true,
+      "index": "same dependency-component resample indices for all main methods and coverage levels; retain all groups in sampled components",
+      "cutoff": "recomputed per draw with full ties",
+      "intervals": "percentile 95% descriptive; additionally nominal97.5% intervals for Bonferroni family of two primary contrasts; no p-values or significance-based choice"
+    },
+    "secondary": [
+      "5/10/20% nominal selection curves with actual tied coverage",
+      "read_support strata0/1-4/5-19/20-99/>=100",
+      "exact annotation strata novel_only/mixed/known_only; novel_only means no exact-known member, not wholly novel junctions",
+      "promoter sharing1/2-4/>=5 candidates",
+      "final AUC in same fixed mother set",
+      "existing development mechanism ablations only"
+    ],
+    "partial_comparators": "method-scorable eligible summaries plus RF/MAP/common-with-partial rows; never compare different prevalences as if the same cohort",
+    "stratum_interpretation": "all cells disclosed; descriptive adequacy flags use original n>=200, positive>=20, components>=20, with undefined AUC shown NA; no final-driven recutting",
+    "forbidden": [
+      "gene case mining",
+      "SHAP searches",
+      "new enrichment analysis",
+      "new models",
+      "new cells",
+      "new grid",
+      "S2 final endpoint expansion"
+    ]
+  },
+  "unlock": {
+    "order": [
+      "protocol and code freeze",
+      "one development selection/refit",
+      "final predictions, scorable masks, accepted/failed models, configurations and code freeze/check",
+      "one independent evaluator reads final eligible E4 and checks final CTSS dependence"
+    ],
+    "model_kernel": "no full E4 access; no final_metrics label directory access; no training allowed after unlock-start marker",
+    "nonfinal_rows": "skip before outcome use in the original two E4 streams",
+    "always_locked": [
+      "Davies",
+      "A375",
+      "global external outcomes",
+      "exposure exclusions"
+    ],
+    "final_visibility_after_unlock": "FINAL_ELIGIBLE_E4_SEEN; no future renewed blind-test claim"
+  },
+  "decision": {
+    "original_Q1_STOP": "UNCHANGED",
+    "no_delta_005_gate_for_CBC": true,
+    "no_required_winner": true,
+    "ready_meaning": "author-review package only; not submission-ready or submitted",
+    "core_failure": "STOP_CBC_ROUTE if invalid evaluation or budget-exceeding reconstruction required",
+    "journal_author_pending": "explicit blockers/pending items, never falsely passed"
+  },
+  "code_sha256": {
+    "common.py": "f088d7caf0ec4035424056d0d3f8bfc0b6ff1fa233e4219307b16a895e482f05",
+    "group_features.py": "2ec1ffae42d7bb73d185ff5cdded6c35b003686b3f9e8faf2aacfdf1c3fe06e8",
+    "iso000g_model_utils.py": "4425ea76097b8b8a4736e142e0531e02170d13c8cbc39a945eab69b5c3f10e57",
+    "minimal_map.py": "cef99b3fb8ef3b6323435e5998162f6370f1f875b9400bd44cdd6c80fca99fbf",
+    "metrics.py": "f2034dc2738d1187f58dd12cf8baa179729fd0ccb3d77857f1bff1e238e2c7a4",
+    "prepare_final_features.py": "a1521188bdfd5367395fa3c3e43ff87463c65ac011ed9c7fd56be14bb307558c",
+    "final_inference.py": "ea1ec83d721ddc0f5347ab015c10a848c7ca1a8bd328836ffca0b8a19930a50e",
+    "final_train.py": "0571ef5a74c4cc9afb31b37c213d4c5089a246a4a611a9c3311612b59e237b33",
+    "final_metrics.py": "5b6e678df2b4d0b066b7f6210b016caaaabb02c6ab3b00e6c67e5a6cdd7f392e",
+    "final_evaluate.py": "cc8baddc60fe33b64daabb363aff93f77c473c65d385c1a0366a63303f33b9f7",
+    "cleanroom.py": "74a11d74b673635688a28fd2d3b3b4120b035b8d5379b3af30441784d9fa2f8c",
+    "launch.py": "c2bec4642eb1e76c7593490fcfab94e0da60c7dc9d690a237c907e70bbe37088",
+    "monitor.py": "7a7675f99744351662d0ffc74b0776f4c26507c30a24661eb7db7206f687b707",
+    "science_preflight.py": "06296736b856b1ab46336d8932670cd2673c2656dab91265457e2f42c1babaf9"
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "stage": "ISO-001A_Q1_SCIENTIFIC_VALUE_GATE",
+  "version": "1.0",
+  "created_utc": "2026-09-07T07:40:52.190665+00:00",
+  "state": "FROZEN_BEFORE_DEVELOPMENT_E4_UNLOCK",
+  "claim_scope": "DEVELOPMENT_ONLY_ORTHOGONAL_PROMOTER_SUPPORT_EVENT_NOT_BIOLOGICAL_FUNCTION",
+  "project": ".",
+  "execution_host": "original analysis host",
+  "seed": 20260903,
+  "authority": {
+    "registry_sha256": "424bf799abb63dedcbd173b6fa783af9b349c059a09b0df3c39ea46cc4aa67c2",
+    "extra_registry_sha256": "79f3359db8f1fab61cbb134e96d9e1c676d398c4a2be83091d9380ccc9dc4412",
+    "candidate_sha256": "31ed901689f0ce70039aa1dd6a80cdb2d5a3001441c3a3550947c0eb56cf6c9d",
+    "core_sha256": "17dae2cff24022c9146bc6d0193c25d4f71eb2a53db2908d6c69937b31279d67",
+    "split_sha256": "eb216b7d30b4dde15df87a2304a9a3e9891eef3da1a2e41c42269e20d527c23a",
+    "G_R2": "NO_EXECUTION_REPORT_NOT_COMPLETED"
+  },
+  "budget": {
+    "max_total_workdays": 10,
+    "max_technical_repair_workdays": 2,
+    "no_automatic_expansion": true,
+    "planned_remaining_compute_hours": 12,
+    "remaining_external_work_if_GO_workdays": 15,
+    "remaining_external_ceiling_workdays": 20
+  },
+  "unit": {
+    "primary": "ONE_PROMOTER_GROUP",
+    "likelihood": "one Bernoulli support-event observation per group",
+    "candidate_predictions": "one common group event prediction; members remain tied/unresolved; no functional probability"
+  },
+  "endpoint": {
+    "primary": "top_decile_enrichment",
+    "definition": "positive_rate_in_top_decile / positive_rate_in_all_eligible_scored_groups",
+    "positive": "ISO-000F >=2/3 replicate detected at any exact-member TSS +/-50bp inclusive; fixed coordinates unchanged",
+    "negative": "assay eligible not reproducibly detected; not functional negative",
+    "score_direction": "larger predicts more promoter support",
+    "exact_ties": "include all equal scores at weighted 90th-percentile cutoff; report actual coverage; no candidate ID tie breaking",
+    "S2": "same +/-50bp member windows AND same eligibility denominator; two-replicate positions <=5bp",
+    "secondary": [
+      "AUC pooled and pair-count-weighted within-fold AUC",
+      "log loss and Brier for supervised probabilities",
+      "same-universe S2 enrichment"
+    ]
+  },
+  "eligibility": {
+    "membership": "exactly frozen 46408 DEVELOPMENT_POOL groups exported",
+    "mask": [
+      "assay_eligibility TRUE from F visible metadata",
+      "not ALL_COMPATIBLE_CTSS_PROMOTER_GROUP_SHARED",
+      "not label-blind evidence/window dependency touching FINAL_BLIND_TEST"
+    ],
+    "ambiguous_isolation": "5279 historical ambiguous outcome groups lie inside 5912 all-shared metadata groups; isolate all 5912 before label visibility; additional 633 all-shared groups remain unresolved, never negatives; no locked source mutation",
+    "historical_negative_bug": "F primary_anchor_status generic negative also used for ambiguous/ineligible statuses; new export eligibility mask prevents these becoming training negatives",
+    "no_candidate_or_split_or_holdout_mutation": true,
+    "partial_baseline_policy": "SQANTI3/PSQAN group fully scored only when all its frozen candidates scored; otherwise NaN; paired comparisons on common support; no minimum-score imputation"
+  },
+  "independence": {
+    "frozen_unit": "original gene/block connected component",
+    "additional_conservative_dependencies": [
+      "overlap of exact-member +/-50bp windows on same chromosome and strand",
+      "same primary E1 read ID shared by groups",
+      "same strand-specific E2 junction shared by groups"
+    ],
+    "final_policy": "exclude development groups in dependence components touching final; final membership unchanged and final labels never read",
+    "outer": "original frozen 5 inner_fold values used as development outer OOF folds; purge training components touching validation, never reassign groups",
+    "inner": "2 deterministic folds by SHA256(dependence_component_id|ISO001A_INNER|20260903), within outer training; gene/block/candidate/component cannot cross",
+    "preprocessing": "fit numerical imputation and robust scaling only on training fold; categorical status schema label-blind; NOT_APPLICABLE distinct from missing and from observed zero",
+    "bootstrap": "2000 paired nonparametric draws of merged dependence components, retaining all their promoter groups; recompute tied top-decile cutoffs in every draw; fixed seed20260903; these components include frozen gene/block units and CTSS dependence; no IID candidate bootstrap"
+  },
+  "comparators": {
+    "full_coverage": [
+      "B0 frozen read-only",
+      "B2 frozen annotation-only",
+      "SOURCE_AWARE equal source-block ECDF rank, read+junction one long-read source block",
+      "READ_UNION deduplicated read-only sensitivity",
+      "ELASTIC_NET",
+      "RANDOM_FOREST",
+      "ISOCRED_MAP"
+    ],
+    "partial": [
+      "PSQAN_STYLE fixed neutral-read within-gene percentage, mean across R1/R2; no PSQAN filtering/candidate removal; ambiguity or zero gene read denominator unscored",
+      "SQANTI3_RULE installed official v6.0.2 default rules with force_multiexon False; no E4/CAGE input, no ML training labels"
+    ],
+    "TRIFID": "optional not run: no compatible frozen annotated coding score table; never score novel as zero",
+    "same_information": "EN/RF use frozen group core aggregates plus same minimal deduplicated evidence/opportunity features; SQANTI3 rules use existing sequence-derived QC and are reported as additional-information comparator",
+    "baseline_grid_sha256": "eabe278acd69f4064fec415371989901cc48c72719a12818b8b2c8ca53abdf94",
+    "grid": "all original EN20 and RF18 configurations evaluated by grouped inner CV; select highest mean inner top-decile enrichment, fixed grid order breaks exact ties; non-converged configurations are invalid regardless of score; selected outer fit must converge"
+  },
+  "minimal_model": {
+    "type": "hierarchical logistic MAP",
+    "formula": "eta_g = alpha + X_g beta + u_component; y_g ~ Bernoulli(sigmoid(eta_g)) once per group",
+    "priors": "beta_j ~ N(mu_source[j],1); mu_s ~ N(0,1); u_c ~ N(0,0.5^2); alpha ~ N(0,5^2)",
+    "source_blocks": "long-read E1+E2 together, annotation, resolution/status; no independent likelihood per layer or candidate",
+    "prediction": "new-component random effect integrated by 15-node Gauss-Hermite quadrature, no held-out outcomes used",
+    "features": [
+      "log1p unique group read unions R1/R2",
+      "log1p median support on distinct strand-specific group junctions R1/R2",
+      "fraction distinct junctions supported R1/R2",
+      "cross-group read ambiguity R1/R2",
+      "annotation B2/2",
+      "log1p candidate count",
+      "log1p exact TSS count",
+      "log1p union window opportunity",
+      "monoexon fraction",
+      "NOT_APPLICABLE junction indicator"
+    ],
+    "optimizer": "L-BFGS-B maxiter2000 ftol1e-10 gtol1e-5; fixed priors no model selection",
+    "uncertainty": "clustered performance intervals and component-prior predictive integration only; no posterior credible-interval calibration claim"
+  },
+  "ablations": {
+    "candidate_replication": "same group features/target naively repeated once for each candidate; equivalent integer candidate_count likelihood weight, isolating pseudoreplication; not a competitor",
+    "source_cumulative": "replace union read counts with sum of caller-by-candidate read incidences, all else fixed",
+    "missing_zero": "replace missing/NOT_APPLICABLE numerical values with zero, remove applicability indicator and missing indicators",
+    "no_annotation": "drop B2 term; otherwise unchanged",
+    "caller_sensitivity": [
+      "TALON",
+      "FLAIR",
+      "IsoQuant"
+    ]
+  },
+  "strata": {
+    "read_support": [
+      "0",
+      "1-4",
+      "5-19",
+      "20-99",
+      ">=100"
+    ],
+    "known_fraction": [
+      "0 novel-only",
+      "(0,1) mixed",
+      "1 known-only"
+    ],
+    "promoter_sharing": [
+      "1 candidate",
+      "2-4 candidates",
+      ">=5 candidates"
+    ],
+    "window_opportunity_bp": [
+      "101",
+      "102-125",
+      ">125"
+    ],
+    "monoexon": [
+      "none",
+      "mixed",
+      "all"
+    ],
+    "caller_membership": [
+      "absent",
+      "partial",
+      "all"
+    ],
+    "interpretable_min_groups": 200,
+    "interpretable_min_positives": 20,
+    "interpretable_min_clusters": 20,
+    "adjustment": "within read-support x known/novel x sharing strata compare top-decile enrichment; weight by eligible group counts; additionally report no-annotation model and matched common-support baseline pairs"
+  },
+  "decision": {
+    "method_route": "delta enrichment >=0.05 versus strongest applicable same-information baseline AND paired cluster 95% lower>0; control-stratified mean improvement positive; explicit SQANTI3 and PSQAN comparisons; executable <=3-4 week external path; all locks intact",
+    "strongest_baseline": "max of full-coverage B0/B2/SOURCE_AWARE/READ_UNION/EN/RF; recompute strongest baseline in each bootstrap; separate PSQAN/SQANTI common-support comparisons must not show material deficit",
+    "mechanism_route": "predefined correction improves group-level Brier >=0.01 vs each of replication/cumulative diagnostic controls, cluster lower>0; delta enrichment vs strongest legitimate baseline >=-0.02; controlled effects persist; not an excuse to compare only erroneous controls",
+    "stop_increment": "otherwise STOP_FOR_Q1_INSUFFICIENT_INCREMENT",
+    "stop_technical": "trustworthy evaluation not obtained within 2 workdays or key implementation persistently unstable",
+    "no_Q1_promise": true
+  },
+  "locked": [
+    "11602-group FINAL_BLIND_TEST",
+    "global external holdout",
+    "exposure exclusions",
+    "Davies/A375 outcomes"
+  ],
+  "external_scope": "metadata/file inventory only; no external evaluation contents",
+  "frozen_science_code": {
+    "real_compare.py": "b87c0e53a37f4a1e031d75d5a14d380264b8c7430827f470bb2b0b8bf37c7a55",
+    "minimal_map.py": "cef99b3fb8ef3b6323435e5998162f6370f1f875b9400bd44cdd6c80fca99fbf",
+    "metrics.py": "f2034dc2738d1187f58dd12cf8baa179729fd0ccb3d77857f1bff1e238e2c7a4",
+    "group_features.py": "2ec1ffae42d7bb73d185ff5cdded6c35b003686b3f9e8faf2aacfdf1c3fe06e8",
+    "extract_development.py": "3dd8a3807deb7f1f44c5c1f14317bb30db3d0e1a293256f594f91bc25c840344"
+  },
+  "label_blind_preparation_sha256": "d868e0bab7c6c566e52a3e39922adc19aa81093f84011aed5c588daf5c80d014"
+}

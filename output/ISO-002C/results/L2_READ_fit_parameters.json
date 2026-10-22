@@ -1,0 +1,107 @@
+[
+  {
+    "model": "L2_READ",
+    "outer_fold": 0,
+    "status": "ACCEPTED",
+    "params": {
+      "C": 0.01
+    },
+    "warning_messages": [],
+    "train_n": 24024,
+    "validation_n": 5821,
+    "selected_inner_enrichment": 1.6647558814615748,
+    "transformed_columns": [
+      "LR_read_R1",
+      "LR_read_R2"
+    ],
+    "features": [
+      "LR_read_R1",
+      "LR_read_R2"
+    ],
+    "wall_seconds": 0.03962477808818221
+  },
+  {
+    "model": "L2_READ",
+    "outer_fold": 1,
+    "status": "ACCEPTED",
+    "params": {
+      "C": 1.0
+    },
+    "warning_messages": [],
+    "train_n": 23321,
+    "validation_n": 6248,
+    "selected_inner_enrichment": 1.6745053644572951,
+    "transformed_columns": [
+      "LR_read_R1",
+      "LR_read_R2"
+    ],
+    "features": [
+      "LR_read_R1",
+      "LR_read_R2"
+    ],
+    "wall_seconds": 0.037815339863300323
+  },
+  {
+    "model": "L2_READ",
+    "outer_fold": 2,
+    "status": "ACCEPTED",
+    "params": {
+      "C": 0.01
+    },
+    "warning_messages": [],
+    "train_n": 23153,
+    "validation_n": 6352,
+    "selected_inner_enrichment": 1.672217154254263,
+    "transformed_columns": [
+      "LR_read_R1",
+      "LR_read_R2"
+    ],
+    "features": [
+      "LR_read_R1",
+      "LR_read_R2"
+    ],
+    "wall_seconds": 0.037257049698382616
+  },
+  {
+    "model": "L2_READ",
+    "outer_fold": 3,
+    "status": "ACCEPTED",
+    "params": {
+      "C": 0.1
+    },
+    "warning_messages": [],
+    "train_n": 23329,
+    "validation_n": 6264,
+    "selected_inner_enrichment": 1.6515939751137814,
+    "transformed_columns": [
+      "LR_read_R1",
+      "LR_read_R2"
+    ],
+    "features": [
+      "LR_read_R1",
+      "LR_read_R2"
+    ],
+    "wall_seconds": 0.038731487933546305
+  },
+  {
+    "model": "L2_READ",
+    "outer_fold": 4,
+    "status": "ACCEPTED",
+    "params": {
+      "C": 1.0
+    },
+    "warning_messages": [],
+    "train_n": 23808,
+    "validation_n": 5802,
+    "selected_inner_enrichment": 1.6537211726202494,
+    "transformed_columns": [
+      "LR_read_R1",
+      "LR_read_R2"
+    ],
+    "features": [
+      "LR_read_R1",
+      "LR_read_R2"
+    ],
+    "wall_seconds": 0.03809985192492604
+  }
+]
