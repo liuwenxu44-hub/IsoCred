@@ -1,8 +1,11 @@
 {
-  "schema_version": 1,
-  "status": "PUBLIC_CANDIDATE_VERIFIED_NOT_PUBLISHED",
-  "created_utc": "2026-10-22T08:35:54.146776+00:00",
-  "self_exclusion": "This manifest cannot hash itself; the private closed upload allowlist includes it.",
+  "schema_version": 2,
+  "kind": "release_checksums",
+  "release": "v1.0.1",
+  "base_commit": "89645163da180dff1e028d3079966d6fadc59e7c",
+  "created_utc": "2026-10-22T11:33:20.696060+00:00",
+  "scope": "Documentation and repository cleanup; analysis data, model checkpoints and scientific settings unchanged.",
+  "self_exclusion": "This file lists every tracked file except itself.",
   "files": [
     {
       "path": ".gitignore",
@@ -11,8 +14,8 @@
     },
     {
       "path": "DATA.md",
-      "bytes": 4524,
-      "sha256": "f50f3caeded1b40edb1bb15207c8fa6be5b784dd0ce72212c95552eb7878e499"
+      "bytes": 4557,
+      "sha256": "bff2b57b8f0a2b288543dab9effb2a79d8d7923fefce2819cc70b91d30e46979"
     },
     {
       "path": "LICENSE",
@@ -31,8 +34,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3703,
-      "sha256": "823b2469258844bb4da0b8b59e779a61f3eb85d2d179071907fd20f705803ab7"
+      "bytes": 3701,
+      "sha256": "e203a059bf36e444130429d18edfd93e1bfd9bef3583bb2afa0f139d2a554c0d"
     },
     {
       "path": "contracts/ISO-001A_real_data_comparison_contract.yaml",
@@ -480,29 +483,14 @@
       "sha256": "0c23bf58e3bb3743eebbabc37271472675c248a6c8b109120c6e37183e5a503c"
     },
     {
-      "path": "provenance/checkpoint_replay.json",
-      "bytes": 2237,
-      "sha256": "3762189efd7a86f30b2a0789b4d2b593c5e44bbb223270c14a67d7dfe91a8732"
-    },
-    {
-      "path": "provenance/content_audit.json",
-      "bytes": 23074,
-      "sha256": "1ce3a80a0c115d13401a68b24dd2c133bd97c487f02770a4434a51b4ba119de6"
-    },
-    {
       "path": "provenance/environment.json",
       "bytes": 415,
       "sha256": "b04b7fce5eeb74498ed92b928b66b692422f43c2a07ba5e55b05ca7409a73923"
     },
     {
-      "path": "provenance/point_verification.json",
-      "bytes": 5554,
-      "sha256": "0d88988d0735a44827c8d0a57192de4db3a0de9582318f8e2015fab377d10563"
-    },
-    {
       "path": "provenance/source_to_release.json",
-      "bytes": 145657,
-      "sha256": "9a5f14a302781f2ee31f2d01009cd75d9fcfd75803e1874a97f4932bee58a35b"
+      "bytes": 101512,
+      "sha256": "02512440ca5ece735d951ebf55ddabefb5e12190e1f1a52bc5bc6947e8f9a845"
     },
     {
       "path": "provenance/upstream_sources.json",
@@ -518,11 +506,6 @@
       "path": "requirements.txt",
       "bytes": 113,
       "sha256": "ce7fb535a18af6a85225e5048febd1f155b7f188b2777c3c7eed5076c735a449"
-    },
-    {
-      "path": "work/ISO-001A/code/bootstrap.py",
-      "bytes": 4382,
-      "sha256": "3d9a24139f1c24fb445147e90f8286f6f87457b7b480987bc37ef9c0fa610dc6"
     },
     {
       "path": "work/ISO-001A/code/common.py",
@@ -690,11 +673,6 @@
       "sha256": "7aa28de6cfd32c0ff28b09de86680a7f088dd11269065e76e060515f9e162766"
     },
     {
-      "path": "work/ISO-002B/code/reference_metadata.py",
-      "bytes": 2074,
-      "sha256": "90659e43f7ee2c5687950db3f867d48ada810b91100cef3c875bbb33866a9c0e"
-    },
-    {
       "path": "work/ISO-002C/code/common.py",
       "bytes": 3035,
       "sha256": "65ec749ae7f469096369c3aa487f8ebdf07a8460bfe423f8b75ea2011541d2fe"
@@ -718,11 +696,6 @@
       "path": "work/ISO-002C/code/minimal_map.py",
       "bytes": 1972,
       "sha256": "cef99b3fb8ef3b6323435e5998162f6370f1f875b9400bd44cdd6c80fca99fbf"
-    },
-    {
-      "path": "work/ISO-002C/code/postprocess.py",
-      "bytes": 4115,
-      "sha256": "99bcc2080ed01d84fcf720073c70df31bbab71108b0ce1bcfbd312f7b7fe6d97"
     },
     {
       "path": "work/ISO-002C/code/train.py",
@@ -811,8 +784,8 @@
     },
     {
       "path": "work/ISO-002D/evaluation_adapter/reporting.py",
-      "bytes": 15241,
-      "sha256": "e32ae5077f3c5c6eb17c0880ba24215e38824d54a6e19c1219cf3a411def0e91"
+      "bytes": 15130,
+      "sha256": "a0b9b28bff26939f952aa764bdedabc46cfb2505dd9e47aa3c9b87b41853b80e"
     },
     {
       "path": "work/ISO-002D/evaluation_adapter/run/development/adequacy_flags.tsv.gz",

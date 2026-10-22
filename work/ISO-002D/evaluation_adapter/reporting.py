@@ -100,9 +100,9 @@ def verify_ledger(result,ledger):
   verified_fields='point_estimates;left/right;all_reported_CI_fields;valid/invalid_draws;population_counts;coverage;integer-derived_positive/negative_counts;adequacy')
 def markdown(result,ledger,populations):
  case=result['case'];n=result['primary_eligible_population']['n'];boot=result['bootstrap']
- lines=['# ISO-002D scientific computation report','',
+ lines=['# Common10 CAGE-support comparison','',
   'Evidence: '+EVIDENCE[case]+'.','',
-  'This is a fixed common10 promoter-CTSS-support comparison, not original RF71 external validation, functional/protein validation, a pure cell-type effect, or evidence of new-gene generalization. Original algorithm STOP is unchanged. No journal acceptance probability or automatic winner/algorithm-revival decision is produced.','',
+  'This comparison evaluates common10 promoter-CTSS-support predictions. It does not test the original RF71 model, establish transcript function, isolate a cell-type effect, or assess previously unseen genes. The negative result for the original MAP model is unchanged.','',
   'Development was post hoc after historical final exposure. External uses a new prespecified 2/2 endpoint; inherited development uses 2/3. Absolute enrichment across these two datasets is not treated as the same measurement scale.','',
   'All signs, endpoints and fixed strata are retained. Eligible negatives mean no reproducible support in this assay, not biological absence. Diagnostics are ranking scores, not calibrated probabilities.','',
   '## Fixed analysis and uncertainty','',
@@ -141,8 +141,8 @@ def markdown(result,ledger,populations):
  for r in populations:
   flags=', '.join(r['adequacy_flags']) or 'above fixed thresholds'
   lines.append('| '+' | '.join(map(fmt,[r['scope'],r['endpoint'],r['population_id'][-12:],r['n'],r['positives'],r['negatives'],r['component_n'],flags]))+' |')
- lines+=['','## Complete audit-ready outputs','',
-  'evaluation.json retains every method, fixed contrast, coverage fraction, endpoint, fold and stratum at full precision. scientific_numbers.tsv contains '+str(len(ledger))+' exact JSON-pointer-bound numeric values, including negative effects and undefined metrics; adequacy_flags.tsv retains every support population. Displayed finite numbers use six significant digits, while TSV values use 17 significant digits. Adequacy count rows retain JSON source pointers; positives are round(n × point prevalence), with integer consistency checked. Absent declared bins remain explicit n=0 rows. Low adequacy, saturation, or undefined endpoints do not authorize another dataset, model, fit, seed, or outcome unlock.','']
+ lines+=['','## Complete result files','',
+  'evaluation.json contains every method, fixed contrast, coverage fraction, endpoint, fold and stratum at full precision. scientific_numbers.tsv contains '+str(len(ledger))+' numeric values linked to their JSON source fields, including negative effects and undefined metrics; adequacy_flags.tsv lists every support population. Displayed finite numbers use six significant digits, while TSV values use 17 significant digits. Adequacy count rows retain JSON source pointers; positives are round(n × point prevalence), with integer consistency checked. Empty bins remain explicit n=0 rows. Low-adequacy strata, saturation and undefined endpoints are reported as observed.','']
  return '\n'.join(lines)
 def write_tsv(path,rows):
  if not rows:raise ValueError('EMPTY_LEDGER')
