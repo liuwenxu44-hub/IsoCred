@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
   "kind": "release_checksums",
-  "release": "v1.0.1",
-  "base_commit": "89645163da180dff1e028d3079966d6fadc59e7c",
-  "created_utc": "2026-10-22T11:33:20.696060+00:00",
-  "scope": "Documentation and repository cleanup; analysis data, model checkpoints and scientific settings unchanged.",
+  "release": "v1.0.1+attribution.20261110",
+  "base_commit": "d9081c2eff561de91776fe0294a12797a59abdc4",
+  "created_utc": "2026-11-10T08:44:03Z",
+  "scope": "Amend code copyright attribution only. The MIT terms, data licence, research authorship, code and scientific artifacts are unchanged.",
   "self_exclusion": "This file lists every tracked file except itself.",
   "files": [
     {
@@ -19,8 +19,8 @@
     },
     {
       "path": "LICENSE",
-      "bytes": 1267,
-      "sha256": "37afc29ae9d153b1f6dd51892606e2ee3eecf6fbac4e1d99a5c06ca363e7bc4c"
+      "bytes": 1242,
+      "sha256": "1356f0ed2722c7a292f68dbaacdb2bef5dbf88c88715f5a277ad8d5b3fe886bf"
     },
     {
       "path": "LICENSE-DATA",
@@ -847,5 +847,11 @@
       "bytes": 13755,
       "sha256": "1af4ffeb7c6c5ba0097e4c9868bd99c73f8d6ab6c2b5bbc56036d88ea141512b"
     }
-  ]
+  ],
+  "amends_frozen_release": {
+    "release": "v1.0.1",
+    "commit": "d9081c2eff561de91776fe0294a12797a59abdc4",
+    "manifest_path": "provenance/release_manifest.json",
+    "manifest_sha256": "05399a3b7baa9dc8bf99761100a05a7489d326b2bdca33780f8bc8904f6183f6"
+  }
 }
